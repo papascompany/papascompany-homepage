@@ -115,7 +115,19 @@ img{display:block;max-width:100%;height:auto}
 .btn-light-on-dark:hover{background:var(--cyan);color:#fff;box-shadow:inset 0 0 0 2px #fff, var(--ring);transform:scale(1.06)}
 .btn-sm{font-size:13px;padding:9px 18px}
 
-@media(max-width:880px){.nav-links{display:none}.nav{padding:12px 20px}}
+/* Mobile hamburger toggle + dropdown menu */
+.nav-toggle{display:none;width:42px;height:42px;border:0;background:transparent;color:#fff;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.nav-toggle .ic-close{display:none}
+.nav-toggle.open .ic-open{display:none}
+.nav-toggle.open .ic-close{display:block}
+.mobile-nav{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,0.97);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);display:flex;flex-direction:column;gap:2px;padding:84px 24px calc(40px + env(safe-area-inset-bottom));overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s ease, transform .22s ease, visibility .22s}
+.mobile-nav.open{opacity:1;visibility:visible;transform:none}
+.mobile-nav a{color:#fff;font-size:19px;font-weight:600;letter-spacing:-0.01em;padding:17px 6px;border-bottom:1px solid rgba(255,255,255,0.09)}
+.mobile-nav a:active{color:var(--link-rest-dark)}
+.mobile-nav .mobile-cta{margin-top:26px;width:100%;justify-content:center;font-size:15px;padding:15px}
+@media(min-width:881px){.mobile-nav{display:none}}
+@media(max-width:880px){.nav-links{display:none}.nav{padding:12px 20px}.nav-toggle{display:inline-flex}.nav-search{display:none}}
+@media(max-width:560px){.nav-brand .ko{display:none}}
 
 /* ============== HERO ============== */
 .hero{
@@ -623,8 +635,24 @@ section.editorial{padding:96px 0}
     <button class="btn btn-primary btn-sm" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
       문의하기
     </button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
   </div>
 </nav>
+
+<!-- ============== MOBILE MENU ============== -->
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#solutions">솔루션</a>
+  <a href="#pipeline">파이프라인</a>
+  <a href="#stats">실적</a>
+  <a href="#roadmap">로드맵</a>
+  <a href="#identity">브랜드</a>
+  <a href="#contact">문의</a>
+  <a href="#portfolio">포트폴리오</a>
+  <button class="btn btn-primary mobile-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">문의하기</button>
+</div>
 
 <!-- ============== HERO ============== -->
 <section class="hero" id="top">
@@ -1596,6 +1624,21 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
   });
 });
+
+/* ============== Mobile menu toggle ============== */
+const navToggle = document.getElementById('nav-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+function setMenu(open){
+  mobileNav.classList.toggle('open', open);
+  navToggle.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navToggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+navToggle.addEventListener('click', () => setMenu(!mobileNav.classList.contains('open')));
+mobileNav.querySelectorAll('a, .mobile-cta').forEach(el => el.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileNav.classList.contains('open')) setMenu(false); });
+window.addEventListener('resize', () => { if (window.innerWidth > 880 && mobileNav.classList.contains('open')) setMenu(false); });
 
 /* ============== Active section in nav + thumb tray ============== */
 const sections = ['story-intro','solutions','lineup','pipeline','stats','anniversary','roadmap','identity','contact','portfolio'];
