@@ -65,7 +65,7 @@
   "lineup.tab0": "전체 라인업",
   "lineup.tab1": "주력 제품",
   "lineup.tab2": "Printable Base Solutions",
-  "tile0.img": "https://picsum.photos/seed/papas-02/800/600",
+  "tile0.img": "img/tile0-img.webp",
   "tile0.platform": "AI Memoir",
   "tile0.title": "AI 자서전 '나의이야기'",
   "tile0.desc": "대화형 AI 인터뷰 → 자서전 자동 생성",
