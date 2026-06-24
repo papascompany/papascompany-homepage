@@ -1,6 +1,6 @@
 # PapasCompany Homepage
 
-파파스컴퍼니 공식 홈페이지 (papascompany.co.kr).
+파파스컴퍼니 공식 홈페이지 (papascompany.co.kr)
 
 ## 구성
 
