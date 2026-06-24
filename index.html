@@ -610,6 +610,9 @@ section.editorial{padding:96px 0}
 /* image-fallback retained but rarely needed now since base bg always present */
 .img-fallback{position:relative}
 </style>
+
+<style id="cms-theme">:root{--papas:#0058d4;--cyan:#1eaedb;--ink:#0a0e17;--sans:'Pretendard', system-ui, sans-serif}
+h1,h2,h3,h4,h5,h6,.section-title{font-family:'Pretendard', system-ui, sans-serif}</style>
 </head>
 <body>
 
@@ -632,9 +635,7 @@ section.editorial{padding:96px 0}
     <button class="nav-search" aria-label="검색">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
     </button>
-    <button class="btn btn-primary btn-sm" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="nav.cta">
-      문의하기
-    </button>
+    <button class="btn btn-primary btn-sm" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="nav.cta">문의하기</button>
     <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
       <svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       <svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
@@ -661,24 +662,16 @@ section.editorial{padding:96px 0}
     <img src="https://picsum.photos/seed/papas-01/2000/1125" alt loading="eager" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="hero.bg">
   </div>
   <div class="hero-inner">
-    <div class="hero-eyebrow" data-k="hero.eyebrow">
-      <span class="pulse"></span>
-      Papas Company · IP × Memoir × Print Tech
-    </div>
-    <h1 data-k="hero.title">
-      기억은 사라지지만<br>
+    <div class="hero-eyebrow" data-k="hero.eyebrow"><span class="pulse"></span>
+      Papas Company · IP × Memoir × Print Tech</div>
+    <h1 data-k="hero.title">기억은 사라지지만<br>
       이야기는 <strong>남습니다.</strong>
-      <span class="en-tag">Memory fades — but story stays. Papas builds the engines that turn human memory into legacy.</span>
-    </h1>
-    <p class="hero-sub" data-k="hero.sub">
-      파파스컴퍼니는 사람의 이야기를 기록하고, 출판하고, POD솔루션을 보급하는 컴퍼니입니다.
-      AI 자서전 엔진, POD 통합 솔루션, Storywork Editor, 그리고 전시·공간 콘텐츠를 하나의 흐름으로 연결합니다.
-    </p>
+      <span class="en-tag">Memory fades — but story stays. Papas builds the engines that turn human memory into legacy.</span></h1>
+    <p class="hero-sub" data-k="hero.sub">파파스컴퍼니는 사람의 이야기를 기록하고, 출판하고, POD솔루션을 보급하는 컴퍼니입니다.
+      AI 자서전 엔진, POD 통합 솔루션, Storywork Editor, 그리고 전시·공간 콘텐츠를 하나의 흐름으로 연결합니다.</p>
     <div class="hero-actions">
-      <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="hero.btn1">
-        솔루션 살펴보기
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
-      </button>
+      <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="hero.btn1">솔루션 살펴보기
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></button>
       <button class="btn btn-ghost-dark" onclick="document.getElementById('story-intro').scrollIntoView({behavior:'smooth'})" data-k="hero.btn2">회사 소개</button>
     </div>
   </div>
@@ -730,16 +723,12 @@ section.editorial{padding:96px 0}
         <div class="section-eyebrow" data-k="story.eyebrow">파파스컴퍼니 소개</div>
         <h2 data-k="story.title">사람의 이야기를<br>기술로 <strong>이어 갑니다.</strong></h2>
         <p class="lead-sub" data-k="story.leadSub">Memoir × IP × Print Technology Studio</p>
-        <p data-k="story.body">
-          시간이 지나면 가장 먼저 잊히는 것은 평범한 일상입니다.
+        <p data-k="story.body">시간이 지나면 가장 먼저 잊히는 것은 평범한 일상입니다.
           파파스컴퍼니는 사라질 이야기를 기록하고, 출판하고, 공간으로 펼치는
           IP 콘텐츠 컴퍼니입니다. 하나의 인터뷰가 한 권의 자서전이 되고,
-          한 권의 자서전이 전시와 공간으로 확장되는 흐름을 자체 기술로 운영합니다.
-        </p>
-        <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="story.btn">
-          자세히 보기
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
-        </button>
+          한 권의 자서전이 전시와 공간으로 확장되는 흐름을 자체 기술로 운영합니다.</p>
+        <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="story.btn">자세히 보기
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></button>
       </div>
       <div class="intro-image reveal bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-09/1400/875" alt="기억과 이야기" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="story.img">
       </div>
@@ -1048,11 +1037,9 @@ section.editorial{padding:96px 0}
         </div>
         <div class="anni-text">
           <h3 data-k="anniversary.title">한 사람의 이야기를<br><strong>한 권, 한 공간으로 잇습니다.</strong></h3>
-          <p data-k="anniversary.body0">
-            파파스컴퍼니는 인터뷰 한 번에서 시작해 책·전시·공간으로 확장되는
+          <p data-k="anniversary.body0">파파스컴퍼니는 인터뷰 한 번에서 시작해 책·전시·공간으로 확장되는
             모든 단계를 자체 기술로 운영하는 IP 스튜디오입니다. AI 인터뷰 엔진,
-            인쇄 자동화 스택, 저작 엔진, 전시 큐레이션이 하나의 흐름 안에 묶여 있습니다.
-          </p>
+            인쇄 자동화 스택, 저작 엔진, 전시 큐레이션이 하나의 흐름 안에 묶여 있습니다.</p>
           <div class="anni-actions">
             <button class="btn btn-primary" onclick="document.getElementById('identity').scrollIntoView({behavior:'smooth'})">
               우리가 믿는 것
@@ -1154,12 +1141,10 @@ section.editorial{padding:96px 0}
     </div>
 
     <div class="identity-grid reveal">
-      <div class="identity-quote" data-k="identity.quote">
-        이야기는 사라지지만<br>
+      <div class="identity-quote" data-k="identity.quote">이야기는 사라지지만<br>
         <em>기록된 이야기</em>는<br>
         세대를 가로질러<br>
-        <em>유산</em>이 됩니다.
-      </div>
+        <em>유산</em>이 됩니다.</div>
       <div class="values">
         <div class="value-cell"><div class="v-num">Value 01</div><h5>Human-First AI</h5><p data-k="identity.valDesc0">AI는 도구이고, 주인공은 사람의 기억과 목소리입니다.</p></div>
         <div class="value-cell"><div class="v-num">Value 02</div><h5>Single IP, Multi Surface</h5><p data-k="identity.valDesc1">하나의 이야기를 책 · 전시 · 디지털 · 공간으로 확장합니다.</p></div>
@@ -1179,10 +1164,8 @@ section.editorial{padding:96px 0}
           <h3 data-k="promo.title">Papas <strong>Studio Membership.</strong></h3>
           <p data-k="promo.body0">제휴사·출판사·자체 인쇄소를 위한 통합 멤버십. POD 통합 솔루션 + Storywork Editor + 전시 IP 라이센싱을 한 계정으로 운영하세요.</p>
         </div>
-        <button class="btn btn-light-on-dark" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="promo.btn0">
-          멤버십 알아보기
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
-        </button>
+        <button class="btn btn-light-on-dark" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="promo.btn0">멤버십 알아보기
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></button>
       </div>
     </div>
   </div>
@@ -1197,10 +1180,8 @@ section.editorial{padding:96px 0}
         <h3 data-k="contact.title">세상의 모든 이야기는<br><strong>소중합니다.</strong></h3>
         <p data-k="contact.body">제휴, 솔루션 도입, 전시 협업, 투자 제안 — 어떤 형태든 환영합니다. 여러분의 이야기를 보내주세요. 24시간 안에 회신드리겠습니다.</p>
         <div class="cta-row">
-          <button class="btn btn-primary" onclick="alert('연결: yohan@papascompany.co.kr')" data-k="contact.btn1">
-            yohan@papascompany.co.kr
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
-          </button>
+          <button class="btn btn-primary" onclick="alert('연결: yohan@papascompany.co.kr')" data-k="contact.btn1">yohan@papascompany.co.kr
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></button>
           <button class="btn btn-ghost-dark" onclick="window.print()" data-k="contact.btn2">Deck 다운로드</button>
         </div>
       </div>
@@ -1400,7 +1381,7 @@ section.editorial{padding:96px 0}
       <div class="footer-col">
         <h6 data-k="footer.col4_title">연결</h6>
         <ul>
-          <li><a href="#contact" data-k="footer.col4_link0">contact@papas.company</a></li>
+          <li><a href="#contact" data-k="footer.col4_link0">yohan@papascompany.co.kr</a></li>
           <li><a href="#" data-k="footer.col4_link1">LinkedIn</a></li>
           <li><a href="#" data-k="footer.col4_link2">Brunch</a></li>
           <li><a href="#" data-k="footer.col4_link3">Newsletter</a></li>
@@ -1408,14 +1389,10 @@ section.editorial{padding:96px 0}
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="copy" data-k="footer.bottom0">
-        © 2026 <strong>PAPAS COMPANY Inc.</strong> All Stories Reserved.<br>
-        v3.0 · Memoir & Print Tech Studio · Built for global IP delivery.
-      </div>
-      <div class="legal" data-k="footer.bottom1">
-        대표: 조요한 · 사업자등록번호: 000-00-00000<br>
-        주소: Republic of Korea · contact@papas.company
-      </div>
+      <div class="copy" data-k="footer.bottom0">© 2026 <strong>PAPAS COMPANY Inc.</strong> All Stories Reserved.<br>
+        v3.0 · Memoir & Print Tech Studio · Built for global IP delivery.</div>
+      <div class="legal" data-k="footer.bottom1">대표: 조요한 · 사업자등록번호: 000-00-00000<br>
+        주소: Republic of Korea · contact@papas.company</div>
     </div>
   </div>
 </footer>
