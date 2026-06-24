@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>랜딩관리 · PapasCompany</title>
+<style>
+  :root{--papas:#0058d4;--deep:#003f9c;--ink:#0a0e17;--gray:#6b6b6b;--line:#e7e9ee;--bg:#f5f7fa;--ok:#0a7a45;--err:#c0341d}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Pretendard','Apple SD Gothic Neo',system-ui,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5}
+  button{font-family:inherit;cursor:pointer}
+  input,textarea,select{font-family:inherit;font-size:14px}
+  a{color:var(--papas)}
+
+  /* login */
+  #login{position:fixed;inset:0;background:#0a0e17;display:flex;align-items:center;justify-content:center;z-index:100}
+  #login .box{background:#fff;border-radius:16px;padding:36px 32px;width:340px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+  #login h1{font-size:19px;margin:0 0 4px}
+  #login p{color:var(--gray);font-size:13px;margin:0 0 20px}
+  #login input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:9px;margin-bottom:12px}
+  #login button{width:100%;padding:12px;background:var(--papas);color:#fff;border:0;border-radius:9px;font-weight:600;font-size:15px}
+  #login .err{color:var(--err);font-size:13px;min-height:18px;margin-top:4px}
+
+  /* shell */
+  header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;padding:12px 20px}
+  header .logo{width:30px;height:30px;border-radius:7px;background:var(--papas);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+  header h1{font-size:16px;margin:0;font-weight:700}
+  header .grow{flex:1}
+  header .meta{font-size:12.5px;color:var(--gray)}
+  header a.view{font-size:13px;text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:8px;color:var(--ink)}
+  header .save{padding:9px 18px;background:var(--papas);color:#fff;border:0;border-radius:8px;font-weight:600;font-size:14px}
+  header .save:disabled{opacity:.5;cursor:not-allowed}
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;z-index:50;box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:80vw}
+  .toast.ok{background:var(--ok)} .toast.err{background:var(--err)}
+
+  .wrap{display:flex;max-width:1180px;margin:0 auto;gap:24px;padding:24px 20px}
+  nav.side{width:210px;flex:none;position:sticky;top:70px;align-self:flex-start;max-height:calc(100vh - 90px);overflow:auto}
+  nav.side button{display:block;width:100%;text-align:left;padding:9px 12px;border:0;background:transparent;border-radius:8px;color:var(--ink);font-size:13.5px;margin-bottom:2px}
+  nav.side button:hover{background:#eef1f6}
+  nav.side button.on{background:var(--papas);color:#fff;font-weight:600}
+  main{flex:1;min-width:0}
+  main h2.cat{font-size:18px;margin:0 0 4px}
+  main .hint{color:var(--gray);font-size:13px;margin:0 0 20px}
+
+  .sub{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .sub h3{font-size:14px;margin:0 0 14px;color:var(--deep);font-weight:700}
+  .field{margin-bottom:14px}
+  .field:last-child{margin-bottom:0}
+  .field label{display:block;font-size:12.5px;color:var(--gray);margin-bottom:5px;font-weight:600}
+  .field input[type=text],.field input[type=url],.field textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .field textarea{min-height:64px;resize:vertical;line-height:1.5}
+  .field.changed input,.field.changed textarea{border-color:var(--papas);box-shadow:0 0 0 2px rgba(0,88,212,.12)}
+  .field .color-row{display:flex;gap:8px;align-items:center}
+  .field input[type=color]{width:44px;height:38px;padding:2px;border:1px solid var(--line);border-radius:8px;background:#fff}
+
+  .img-field{display:flex;gap:14px;align-items:center}
+  .img-field .thumb{width:120px;height:74px;border-radius:8px;object-fit:cover;background:#eef1f6;border:1px solid var(--line);flex:none}
+  .img-field .ctrl{flex:1;min-width:0}
+  .img-field .path{font-size:11.5px;color:var(--gray);word-break:break-all;margin-top:6px}
+  .img-field .pick{display:inline-block;padding:8px 14px;border:1px solid var(--papas);color:var(--papas);border-radius:8px;font-weight:600;font-size:13px}
+  .img-field .pick.new{background:var(--papas);color:#fff}
+  .img-field input[type=file]{display:none}
+  .badge-new{display:inline-block;background:var(--ok);color:#fff;font-size:11px;padding:2px 7px;border-radius:999px;margin-left:6px}
+</style>
+</head>
+<body>
+
+<div id="login">
+  <div class="box">
+    <h1>랜딩관리</h1>
+    <p>관리자 비밀번호를 입력하세요.</p>
+    <input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" />
+    <button id="loginBtn">들어가기</button>
+    <div class="err" id="loginErr"></div>
+  </div>
+</div>
+
+<div id="app" style="display:none">
+  <header>
+    <div class="logo">P</div>
+    <h1>랜딩관리</h1>
+    <span class="meta" id="dirtyMeta"></span>
+    <span class="grow"></span>
+    <a class="view" href="/" target="_blank" rel="noopener">사이트 보기 ↗</a>
+    <button class="save" id="saveBtn" disabled>저장 (배포)</button>
+  </header>
+  <div class="wrap">
+    <nav class="side" id="side"></nav>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script>
+const state = {
+  pw: '',
+  content: {},      // working copy
+  original: {},     // pristine
+  meta: {},         // key -> {group, groupLabel, label, type, order}
+  uploads: {},      // key -> {name, dataBase64, objectUrl}
+  cats: [],         // ordered category list
+  current: null,
+};
+
+const siteUrl = (p) => !p ? '' : (/^https?:/.test(p) ? p : '/' + String(p).replace(/^\/+/, ''));
+const catOf = (groupLabel) => groupLabel.replace(/\s*\d+\s*$/, '').trim();
+const fileKey = (key) => key.replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '') + '.webp';
+
+/* ---------- login ---------- */
+const $ = (id) => document.getElementById(id);
+function doLogin() {
+  const pw = $('pw').value;
+  if (!pw) { $('loginErr').textContent = '비밀번호를 입력하세요.'; return; }
+  state.pw = pw;
+  sessionStorage.setItem('papas_admin_pw', pw);
+  $('login').style.display = 'none';
+  $('app').style.display = 'block';
+  load();
+}
+$('loginBtn').onclick = doLogin;
+$('pw').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+(() => { const saved = sessionStorage.getItem('papas_admin_pw'); if (saved) { $('pw').value = saved; } })();
+
+/* ---------- load content + meta ---------- */
+async function load() {
+  const [c, m] = await Promise.all([
+    fetch('/content.json?_=' + Date.now()).then(r => r.json()),
+    fetch('/content.meta.json?_=' + Date.now()).then(r => r.json()),
+  ]);
+  state.content = { ...c };
+  state.original = { ...c };
+  state.meta = m;
+  const keys = Object.keys(m).sort((a, b) => m[a].order - m[b].order);
+  const seen = new Set(); state.cats = [];
+  for (const k of keys) { const cat = catOf(m[k].groupLabel); if (!seen.has(cat)) { seen.add(cat); state.cats.push(cat); } }
+  renderSide();
+  selectCat(state.cats[0]);
+  updateDirty();
+}
+
+function renderSide() {
+  $('side').innerHTML = '';
+  for (const cat of state.cats) {
+    const b = document.createElement('button');
+    b.textContent = cat;
+    b.dataset.cat = cat;
+    b.onclick = () => selectCat(cat);
+    $('side').appendChild(b);
+  }
+}
+
+function selectCat(cat) {
+  state.current = cat;
+  [...document.querySelectorAll('nav.side button')].forEach(b => b.classList.toggle('on', b.dataset.cat === cat));
+  renderMain();
+  document.querySelector('main').scrollTo?.(0, 0);
+  window.scrollTo(0, 0);
+}
+
+/* ---------- render fields ---------- */
+function renderMain() {
+  const cat = state.current;
+  const keys = Object.keys(state.meta)
+    .filter(k => catOf(state.meta[k].groupLabel) === cat)
+    .sort((a, b) => state.meta[a].order - state.meta[b].order);
+
+  // group by full groupLabel (e.g. each card)
+  const byGroup = {};
+  for (const k of keys) { (byGroup[state.meta[k].groupLabel] ||= []).push(k); }
+
+  let html = `<h2 class="cat">${cat}</h2><p class="hint">내용을 수정하고 상단 <b>저장</b>을 누르면 GitHub에 커밋되어 약 1분 뒤 사이트에 반영됩니다. 이미지는 자동으로 webp(최대 1280px)로 최적화되어 <code>/img</code>에 저장됩니다.</p>`;
+  const main = $('main');
+  main.innerHTML = html;
+
+  for (const [groupLabel, gkeys] of Object.entries(byGroup)) {
+    const sub = document.createElement('div'); sub.className = 'sub';
+    sub.innerHTML = `<h3>${groupLabel}</h3>`;
+    for (const k of gkeys) sub.appendChild(renderField(k));
+    main.appendChild(sub);
+  }
+}
+
+function markChanged(key, fieldEl) {
+  const changed = state.uploads[key] || (state.content[key] !== state.original[key]);
+  fieldEl.classList.toggle('changed', !!changed);
+  updateDirty();
+}
+
+function renderField(key) {
+  const m = state.meta[key];
+  const wrap = document.createElement('div'); wrap.className = 'field';
+  const label = document.createElement('label'); label.textContent = m.label;
+  wrap.appendChild(label);
+
+  if (m.type === 'image') {
+    const row = document.createElement('div'); row.className = 'img-field';
+    const img = document.createElement('img'); img.className = 'thumb'; img.src = siteUrl(state.content[key]); img.alt = '';
+    img.onerror = () => { img.style.visibility = 'hidden'; };
+    const ctrl = document.createElement('div'); ctrl.className = 'ctrl';
+    const lab = document.createElement('label'); lab.className = 'pick'; lab.textContent = '이미지 변경';
+    const file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*';
+    const path = document.createElement('div'); path.className = 'path'; path.textContent = state.content[key] || '(없음)';
+    file.onchange = async (e) => {
+      const f = e.target.files[0]; if (!f) return;
+      lab.textContent = '변환 중…';
+      try {
+        const { dataBase64, objectUrl } = await toWebp(f);
+        const name = fileKey(key);
+        state.uploads[key] = { name, dataBase64, objectUrl };
+        state.content[key] = 'img/' + name;
+        img.src = objectUrl; img.style.visibility = 'visible';
+        path.innerHTML = 'img/' + name + ' <span class="badge-new">새 이미지</span>';
+        lab.textContent = '이미지 변경'; lab.classList.add('new');
+        markChanged(key, wrap);
+      } catch (err) { lab.textContent = '이미지 변경'; alert('이미지 처리 실패: ' + err.message); }
+    };
+    ctrl.appendChild(lab); ctrl.appendChild(file); ctrl.appendChild(path);
+    row.appendChild(img); row.appendChild(ctrl);
+    // make label trigger file
+    lab.onclick = () => file.click();
+    wrap.appendChild(row);
+    return wrap;
+  }
+
+  if (m.type === 'color') {
+    const rowC = document.createElement('div'); rowC.className = 'color-row';
+    const cp = document.createElement('input'); cp.type = 'color';
+    const tx = document.createElement('input'); tx.type = 'text'; tx.value = state.content[key] || '';
+    const set = (v) => { state.content[key] = v; cp.value = /^#([0-9a-f]{6})$/i.test(v) ? v : cp.value; tx.value = v; markChanged(key, wrap); };
+    cp.value = /^#([0-9a-f]{6})$/i.test(state.content[key] || '') ? state.content[key] : '#0058d4';
+    cp.oninput = () => set(cp.value);
+    tx.oninput = () => set(tx.value);
+    rowC.appendChild(cp); rowC.appendChild(tx);
+    wrap.appendChild(rowC);
+    return wrap;
+  }
+
+  const long = m.type === 'textarea' || m.type === 'html';
+  const input = document.createElement(long ? 'textarea' : 'input');
+  if (!long) input.type = (m.type === 'url') ? 'url' : 'text';
+  input.value = state.content[key] || '';
+  if (m.type === 'html') input.placeholder = 'HTML 태그 사용 가능 (<br>, <strong> 등)';
+  input.oninput = () => { state.content[key] = input.value; markChanged(key, wrap); };
+  wrap.appendChild(input);
+  return wrap;
+}
+
+/* ---------- image -> resized webp ---------- */
+async function toWebp(file) {
+  const bmp = await createImageBitmap(file);
+  const w = Math.min(1280, bmp.width);
+  const h = Math.round(bmp.height * (w / bmp.width));
+  const c = document.createElement('canvas'); c.width = w; c.height = h;
+  c.getContext('2d').drawImage(bmp, 0, 0, w, h);
+  const blob = await new Promise(r => c.toBlob(r, 'image/webp', 0.82));
+  const objectUrl = URL.createObjectURL(blob);
+  const dataBase64 = await new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => res(String(fr.result).split(',')[1]);
+    fr.onerror = rej;
+    fr.readAsDataURL(blob);
+  });
+  return { dataBase64, objectUrl };
+}
+
+/* ---------- dirty + save ---------- */
+function changedKeys() {
+  const ks = new Set(Object.keys(state.uploads));
+  for (const k of Object.keys(state.content)) if (state.content[k] !== state.original[k]) ks.add(k);
+  return [...ks];
+}
+function updateDirty() {
+  const n = changedKeys().length;
+  $('dirtyMeta').textContent = n ? `변경된 항목 ${n}개` : '';
+  $('saveBtn').disabled = n === 0;
+}
+
+function toast(msg, cls) {
+  const t = document.createElement('div'); t.className = 'toast ' + (cls || ''); t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), cls === 'err' ? 7000 : 5000);
+}
+
+$('saveBtn').onclick = async () => {
+  const btn = $('saveBtn'); btn.disabled = true; btn.textContent = '저장 중…';
+  const images = Object.values(state.uploads).map(u => ({ name: u.name, dataBase64: u.dataBase64 }));
+  try {
+    const res = await fetch('/api/publish', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: state.pw, content: state.content, images }),
+    });
+    const j = await res.json();
+    if (!res.ok || !j.ok) {
+      if (res.status === 401) { toast('비밀번호가 올바르지 않습니다. 다시 로그인하세요.', 'err'); sessionStorage.removeItem('papas_admin_pw'); setTimeout(() => location.reload(), 1500); return; }
+      throw new Error(j.error || ('HTTP ' + res.status));
+    }
+    state.original = { ...state.content };
+    state.uploads = {};
+    document.querySelectorAll('.field.changed').forEach(f => f.classList.remove('changed'));
+    document.querySelectorAll('.badge-new').forEach(b => b.remove());
+    updateDirty();
+    toast(`✅ 저장됨 (${j.commit}) — 약 1분 뒤 사이트에 반영됩니다.`, 'ok');
+  } catch (e) {
+    toast('저장 실패: ' + e.message, 'err');
+  } finally {
+    btn.textContent = '저장 (배포)'; updateDirty();
+  }
+};
+</script>
+</body>
+</html>

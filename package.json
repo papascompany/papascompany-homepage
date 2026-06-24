@@ -1,0 +1,12 @@
+{
+  "name": "papascompany-homepage",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "extract": "node scripts/extract.js"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}

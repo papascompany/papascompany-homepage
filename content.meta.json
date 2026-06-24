@@ -1,0 +1,1906 @@
+{
+  "nav.brandKo": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "브랜드 부제(한글)",
+    "type": "text",
+    "order": 0
+  },
+  "nav.link0": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 1",
+    "type": "text",
+    "order": 1
+  },
+  "nav.link1": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 2",
+    "type": "text",
+    "order": 2
+  },
+  "nav.link2": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 3",
+    "type": "text",
+    "order": 3
+  },
+  "nav.link3": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 4",
+    "type": "text",
+    "order": 4
+  },
+  "nav.link4": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 5",
+    "type": "text",
+    "order": 5
+  },
+  "nav.link5": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 6",
+    "type": "text",
+    "order": 6
+  },
+  "nav.link6": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "메뉴 7",
+    "type": "text",
+    "order": 7
+  },
+  "nav.cta": {
+    "group": "nav",
+    "groupLabel": "내비게이션",
+    "label": "문의 버튼 문구",
+    "type": "text",
+    "order": 8
+  },
+  "hero.bg": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "배경 이미지",
+    "type": "image",
+    "order": 9
+  },
+  "hero.eyebrow": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "상단 라벨",
+    "type": "html",
+    "order": 10
+  },
+  "hero.title": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "대제목(HTML 가능, 영문 보조문구 포함)",
+    "type": "html",
+    "order": 11
+  },
+  "hero.sub": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "소개 문단",
+    "type": "textarea",
+    "order": 12
+  },
+  "hero.btn1": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "버튼1 문구",
+    "type": "html",
+    "order": 13
+  },
+  "hero.btn2": {
+    "group": "hero",
+    "groupLabel": "히어로(첫 화면)",
+    "label": "버튼2 문구",
+    "type": "text",
+    "order": 14
+  },
+  "thumbs.img0": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 1 이미지",
+    "type": "image",
+    "order": 15
+  },
+  "thumbs.label0": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 1 라벨",
+    "type": "text",
+    "order": 16
+  },
+  "thumbs.img1": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 2 이미지",
+    "type": "image",
+    "order": 17
+  },
+  "thumbs.label1": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 2 라벨",
+    "type": "text",
+    "order": 18
+  },
+  "thumbs.img2": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 3 이미지",
+    "type": "image",
+    "order": 19
+  },
+  "thumbs.label2": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 3 라벨",
+    "type": "text",
+    "order": 20
+  },
+  "thumbs.img3": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 4 이미지",
+    "type": "image",
+    "order": 21
+  },
+  "thumbs.label3": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 4 라벨",
+    "type": "text",
+    "order": 22
+  },
+  "thumbs.img4": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 5 이미지",
+    "type": "image",
+    "order": 23
+  },
+  "thumbs.label4": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 5 라벨",
+    "type": "text",
+    "order": 24
+  },
+  "thumbs.img5": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 6 이미지",
+    "type": "image",
+    "order": 25
+  },
+  "thumbs.label5": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 6 라벨",
+    "type": "text",
+    "order": 26
+  },
+  "thumbs.img6": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 7 이미지",
+    "type": "image",
+    "order": 27
+  },
+  "thumbs.label6": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 7 라벨",
+    "type": "text",
+    "order": 28
+  },
+  "thumbs.img7": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 8 이미지",
+    "type": "image",
+    "order": 29
+  },
+  "thumbs.label7": {
+    "group": "thumbs",
+    "groupLabel": "썸네일 트레이",
+    "label": "썸네일 8 라벨",
+    "type": "text",
+    "order": 30
+  },
+  "story.eyebrow": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "라벨",
+    "type": "text",
+    "order": 31
+  },
+  "story.title": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 32
+  },
+  "story.leadSub": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "영문 보조문구",
+    "type": "text",
+    "order": 33
+  },
+  "story.body": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "본문",
+    "type": "textarea",
+    "order": 34
+  },
+  "story.btn": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "버튼 문구",
+    "type": "html",
+    "order": 35
+  },
+  "story.img": {
+    "group": "story",
+    "groupLabel": "회사 소개",
+    "label": "이미지",
+    "type": "image",
+    "order": 36
+  },
+  "solutions.eyebrow": {
+    "group": "solutions",
+    "groupLabel": "솔루션 섹션",
+    "label": "라벨",
+    "type": "text",
+    "order": 37
+  },
+  "solutions.title": {
+    "group": "solutions",
+    "groupLabel": "솔루션 섹션",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 38
+  },
+  "solutions.lead": {
+    "group": "solutions",
+    "groupLabel": "솔루션 섹션",
+    "label": "설명",
+    "type": "text",
+    "order": 39
+  },
+  "sol_card0.img": {
+    "group": "sol_card0",
+    "groupLabel": "솔루션 카드 1",
+    "label": "이미지",
+    "type": "image",
+    "order": 40
+  },
+  "sol_card0.tag": {
+    "group": "sol_card0",
+    "groupLabel": "솔루션 카드 1",
+    "label": "뱃지",
+    "type": "text",
+    "order": 41
+  },
+  "sol_card0.title": {
+    "group": "sol_card0",
+    "groupLabel": "솔루션 카드 1",
+    "label": "제목",
+    "type": "text",
+    "order": 42
+  },
+  "sol_card0.en": {
+    "group": "sol_card0",
+    "groupLabel": "솔루션 카드 1",
+    "label": "영문",
+    "type": "text",
+    "order": 43
+  },
+  "sol_card0.desc": {
+    "group": "sol_card0",
+    "groupLabel": "솔루션 카드 1",
+    "label": "설명",
+    "type": "textarea",
+    "order": 44
+  },
+  "sol_card1.img": {
+    "group": "sol_card1",
+    "groupLabel": "솔루션 카드 2",
+    "label": "이미지",
+    "type": "image",
+    "order": 45
+  },
+  "sol_card1.tag": {
+    "group": "sol_card1",
+    "groupLabel": "솔루션 카드 2",
+    "label": "뱃지",
+    "type": "text",
+    "order": 46
+  },
+  "sol_card1.title": {
+    "group": "sol_card1",
+    "groupLabel": "솔루션 카드 2",
+    "label": "제목",
+    "type": "text",
+    "order": 47
+  },
+  "sol_card1.en": {
+    "group": "sol_card1",
+    "groupLabel": "솔루션 카드 2",
+    "label": "영문",
+    "type": "text",
+    "order": 48
+  },
+  "sol_card1.desc": {
+    "group": "sol_card1",
+    "groupLabel": "솔루션 카드 2",
+    "label": "설명",
+    "type": "textarea",
+    "order": 49
+  },
+  "sol_card2.img": {
+    "group": "sol_card2",
+    "groupLabel": "솔루션 카드 3",
+    "label": "이미지",
+    "type": "image",
+    "order": 50
+  },
+  "sol_card2.tag": {
+    "group": "sol_card2",
+    "groupLabel": "솔루션 카드 3",
+    "label": "뱃지",
+    "type": "text",
+    "order": 51
+  },
+  "sol_card2.title": {
+    "group": "sol_card2",
+    "groupLabel": "솔루션 카드 3",
+    "label": "제목",
+    "type": "text",
+    "order": 52
+  },
+  "sol_card2.en": {
+    "group": "sol_card2",
+    "groupLabel": "솔루션 카드 3",
+    "label": "영문",
+    "type": "text",
+    "order": 53
+  },
+  "sol_card2.desc": {
+    "group": "sol_card2",
+    "groupLabel": "솔루션 카드 3",
+    "label": "설명",
+    "type": "textarea",
+    "order": 54
+  },
+  "sol_card3.img": {
+    "group": "sol_card3",
+    "groupLabel": "솔루션 카드 4",
+    "label": "이미지",
+    "type": "image",
+    "order": 55
+  },
+  "sol_card3.tag": {
+    "group": "sol_card3",
+    "groupLabel": "솔루션 카드 4",
+    "label": "뱃지",
+    "type": "text",
+    "order": 56
+  },
+  "sol_card3.title": {
+    "group": "sol_card3",
+    "groupLabel": "솔루션 카드 4",
+    "label": "제목",
+    "type": "text",
+    "order": 57
+  },
+  "sol_card3.en": {
+    "group": "sol_card3",
+    "groupLabel": "솔루션 카드 4",
+    "label": "영문",
+    "type": "text",
+    "order": 58
+  },
+  "sol_card3.desc": {
+    "group": "sol_card3",
+    "groupLabel": "솔루션 카드 4",
+    "label": "설명",
+    "type": "textarea",
+    "order": 59
+  },
+  "lineup.eyebrow": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "라벨",
+    "type": "text",
+    "order": 60
+  },
+  "lineup.title": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 61
+  },
+  "lineup.lead": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "설명",
+    "type": "textarea",
+    "order": 62
+  },
+  "lineup.tab0": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "탭 1",
+    "type": "text",
+    "order": 63
+  },
+  "lineup.tab1": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "탭 2",
+    "type": "text",
+    "order": 64
+  },
+  "lineup.tab2": {
+    "group": "lineup",
+    "groupLabel": "제품 라인업",
+    "label": "탭 3",
+    "type": "text",
+    "order": 65
+  },
+  "tile0.img": {
+    "group": "tile0",
+    "groupLabel": "라인업 타일 1",
+    "label": "이미지",
+    "type": "image",
+    "order": 66
+  },
+  "tile0.platform": {
+    "group": "tile0",
+    "groupLabel": "라인업 타일 1",
+    "label": "뱃지",
+    "type": "text",
+    "order": 67
+  },
+  "tile0.title": {
+    "group": "tile0",
+    "groupLabel": "라인업 타일 1",
+    "label": "제목",
+    "type": "text",
+    "order": 68
+  },
+  "tile0.desc": {
+    "group": "tile0",
+    "groupLabel": "라인업 타일 1",
+    "label": "설명",
+    "type": "text",
+    "order": 69
+  },
+  "tile1.img": {
+    "group": "tile1",
+    "groupLabel": "라인업 타일 2",
+    "label": "이미지",
+    "type": "image",
+    "order": 70
+  },
+  "tile1.platform": {
+    "group": "tile1",
+    "groupLabel": "라인업 타일 2",
+    "label": "뱃지",
+    "type": "text",
+    "order": 71
+  },
+  "tile1.title": {
+    "group": "tile1",
+    "groupLabel": "라인업 타일 2",
+    "label": "제목",
+    "type": "text",
+    "order": 72
+  },
+  "tile1.desc": {
+    "group": "tile1",
+    "groupLabel": "라인업 타일 2",
+    "label": "설명",
+    "type": "text",
+    "order": 73
+  },
+  "tile2.img": {
+    "group": "tile2",
+    "groupLabel": "라인업 타일 3",
+    "label": "이미지",
+    "type": "image",
+    "order": 74
+  },
+  "tile2.platform": {
+    "group": "tile2",
+    "groupLabel": "라인업 타일 3",
+    "label": "뱃지",
+    "type": "text",
+    "order": 75
+  },
+  "tile2.title": {
+    "group": "tile2",
+    "groupLabel": "라인업 타일 3",
+    "label": "제목",
+    "type": "text",
+    "order": 76
+  },
+  "tile2.desc": {
+    "group": "tile2",
+    "groupLabel": "라인업 타일 3",
+    "label": "설명",
+    "type": "text",
+    "order": 77
+  },
+  "tile3.img": {
+    "group": "tile3",
+    "groupLabel": "라인업 타일 4",
+    "label": "이미지",
+    "type": "image",
+    "order": 78
+  },
+  "tile3.platform": {
+    "group": "tile3",
+    "groupLabel": "라인업 타일 4",
+    "label": "뱃지",
+    "type": "text",
+    "order": 79
+  },
+  "tile3.title": {
+    "group": "tile3",
+    "groupLabel": "라인업 타일 4",
+    "label": "제목",
+    "type": "text",
+    "order": 80
+  },
+  "tile3.desc": {
+    "group": "tile3",
+    "groupLabel": "라인업 타일 4",
+    "label": "설명",
+    "type": "text",
+    "order": 81
+  },
+  "tile4.img": {
+    "group": "tile4",
+    "groupLabel": "라인업 타일 5",
+    "label": "이미지",
+    "type": "image",
+    "order": 82
+  },
+  "tile4.platform": {
+    "group": "tile4",
+    "groupLabel": "라인업 타일 5",
+    "label": "뱃지",
+    "type": "text",
+    "order": 83
+  },
+  "tile4.title": {
+    "group": "tile4",
+    "groupLabel": "라인업 타일 5",
+    "label": "제목",
+    "type": "text",
+    "order": 84
+  },
+  "tile4.desc": {
+    "group": "tile4",
+    "groupLabel": "라인업 타일 5",
+    "label": "설명",
+    "type": "text",
+    "order": 85
+  },
+  "tile5.img": {
+    "group": "tile5",
+    "groupLabel": "라인업 타일 6",
+    "label": "이미지",
+    "type": "image",
+    "order": 86
+  },
+  "tile5.platform": {
+    "group": "tile5",
+    "groupLabel": "라인업 타일 6",
+    "label": "뱃지",
+    "type": "text",
+    "order": 87
+  },
+  "tile5.title": {
+    "group": "tile5",
+    "groupLabel": "라인업 타일 6",
+    "label": "제목",
+    "type": "text",
+    "order": 88
+  },
+  "tile5.desc": {
+    "group": "tile5",
+    "groupLabel": "라인업 타일 6",
+    "label": "설명",
+    "type": "text",
+    "order": 89
+  },
+  "tile6.img": {
+    "group": "tile6",
+    "groupLabel": "라인업 타일 7",
+    "label": "이미지",
+    "type": "image",
+    "order": 90
+  },
+  "tile6.platform": {
+    "group": "tile6",
+    "groupLabel": "라인업 타일 7",
+    "label": "뱃지",
+    "type": "text",
+    "order": 91
+  },
+  "tile6.title": {
+    "group": "tile6",
+    "groupLabel": "라인업 타일 7",
+    "label": "제목",
+    "type": "text",
+    "order": 92
+  },
+  "tile6.desc": {
+    "group": "tile6",
+    "groupLabel": "라인업 타일 7",
+    "label": "설명",
+    "type": "text",
+    "order": 93
+  },
+  "tile7.img": {
+    "group": "tile7",
+    "groupLabel": "라인업 타일 8",
+    "label": "이미지",
+    "type": "image",
+    "order": 94
+  },
+  "tile7.platform": {
+    "group": "tile7",
+    "groupLabel": "라인업 타일 8",
+    "label": "뱃지",
+    "type": "text",
+    "order": 95
+  },
+  "tile7.title": {
+    "group": "tile7",
+    "groupLabel": "라인업 타일 8",
+    "label": "제목",
+    "type": "text",
+    "order": 96
+  },
+  "tile7.desc": {
+    "group": "tile7",
+    "groupLabel": "라인업 타일 8",
+    "label": "설명",
+    "type": "text",
+    "order": 97
+  },
+  "pipeline.eyebrow": {
+    "group": "pipeline",
+    "groupLabel": "파이프라인",
+    "label": "라벨",
+    "type": "text",
+    "order": 98
+  },
+  "pipeline.title": {
+    "group": "pipeline",
+    "groupLabel": "파이프라인",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 99
+  },
+  "pipeline.lead": {
+    "group": "pipeline",
+    "groupLabel": "파이프라인",
+    "label": "설명",
+    "type": "text",
+    "order": 100
+  },
+  "pl0.img": {
+    "group": "pl0",
+    "groupLabel": "파이프라인 1",
+    "label": "이미지",
+    "type": "image",
+    "order": 101
+  },
+  "pl0.badge": {
+    "group": "pl0",
+    "groupLabel": "파이프라인 1",
+    "label": "단계 뱃지",
+    "type": "text",
+    "order": 102
+  },
+  "pl0.title": {
+    "group": "pl0",
+    "groupLabel": "파이프라인 1",
+    "label": "제목",
+    "type": "text",
+    "order": 103
+  },
+  "pl0.desc": {
+    "group": "pl0",
+    "groupLabel": "파이프라인 1",
+    "label": "설명",
+    "type": "text",
+    "order": 104
+  },
+  "pl0.stack": {
+    "group": "pl0",
+    "groupLabel": "파이프라인 1",
+    "label": "스택(HTML 가능)",
+    "type": "html",
+    "order": 105
+  },
+  "pl1.img": {
+    "group": "pl1",
+    "groupLabel": "파이프라인 2",
+    "label": "이미지",
+    "type": "image",
+    "order": 106
+  },
+  "pl1.badge": {
+    "group": "pl1",
+    "groupLabel": "파이프라인 2",
+    "label": "단계 뱃지",
+    "type": "text",
+    "order": 107
+  },
+  "pl1.title": {
+    "group": "pl1",
+    "groupLabel": "파이프라인 2",
+    "label": "제목",
+    "type": "text",
+    "order": 108
+  },
+  "pl1.desc": {
+    "group": "pl1",
+    "groupLabel": "파이프라인 2",
+    "label": "설명",
+    "type": "text",
+    "order": 109
+  },
+  "pl1.stack": {
+    "group": "pl1",
+    "groupLabel": "파이프라인 2",
+    "label": "스택(HTML 가능)",
+    "type": "html",
+    "order": 110
+  },
+  "pl2.img": {
+    "group": "pl2",
+    "groupLabel": "파이프라인 3",
+    "label": "이미지",
+    "type": "image",
+    "order": 111
+  },
+  "pl2.badge": {
+    "group": "pl2",
+    "groupLabel": "파이프라인 3",
+    "label": "단계 뱃지",
+    "type": "text",
+    "order": 112
+  },
+  "pl2.title": {
+    "group": "pl2",
+    "groupLabel": "파이프라인 3",
+    "label": "제목",
+    "type": "text",
+    "order": 113
+  },
+  "pl2.desc": {
+    "group": "pl2",
+    "groupLabel": "파이프라인 3",
+    "label": "설명",
+    "type": "text",
+    "order": 114
+  },
+  "pl2.stack": {
+    "group": "pl2",
+    "groupLabel": "파이프라인 3",
+    "label": "스택(HTML 가능)",
+    "type": "html",
+    "order": 115
+  },
+  "pl3.img": {
+    "group": "pl3",
+    "groupLabel": "파이프라인 4",
+    "label": "이미지",
+    "type": "image",
+    "order": 116
+  },
+  "pl3.badge": {
+    "group": "pl3",
+    "groupLabel": "파이프라인 4",
+    "label": "단계 뱃지",
+    "type": "text",
+    "order": 117
+  },
+  "pl3.title": {
+    "group": "pl3",
+    "groupLabel": "파이프라인 4",
+    "label": "제목",
+    "type": "text",
+    "order": 118
+  },
+  "pl3.desc": {
+    "group": "pl3",
+    "groupLabel": "파이프라인 4",
+    "label": "설명",
+    "type": "text",
+    "order": 119
+  },
+  "pl3.stack": {
+    "group": "pl3",
+    "groupLabel": "파이프라인 4",
+    "label": "스택(HTML 가능)",
+    "type": "html",
+    "order": 120
+  },
+  "pl4.img": {
+    "group": "pl4",
+    "groupLabel": "파이프라인 5",
+    "label": "이미지",
+    "type": "image",
+    "order": 121
+  },
+  "pl4.badge": {
+    "group": "pl4",
+    "groupLabel": "파이프라인 5",
+    "label": "단계 뱃지",
+    "type": "text",
+    "order": 122
+  },
+  "pl4.title": {
+    "group": "pl4",
+    "groupLabel": "파이프라인 5",
+    "label": "제목",
+    "type": "text",
+    "order": 123
+  },
+  "pl4.desc": {
+    "group": "pl4",
+    "groupLabel": "파이프라인 5",
+    "label": "설명",
+    "type": "text",
+    "order": 124
+  },
+  "pl4.stack": {
+    "group": "pl4",
+    "groupLabel": "파이프라인 5",
+    "label": "스택(HTML 가능)",
+    "type": "html",
+    "order": 125
+  },
+  "stats.eyebrow": {
+    "group": "stats",
+    "groupLabel": "실적·시장",
+    "label": "라벨",
+    "type": "text",
+    "order": 126
+  },
+  "stats.title": {
+    "group": "stats",
+    "groupLabel": "실적·시장",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 127
+  },
+  "stats.lead": {
+    "group": "stats",
+    "groupLabel": "실적·시장",
+    "label": "설명",
+    "type": "text",
+    "order": 128
+  },
+  "anniversary.title": {
+    "group": "anniversary",
+    "groupLabel": "브랜드 블록",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 129
+  },
+  "anniversary.body0": {
+    "group": "anniversary",
+    "groupLabel": "브랜드 블록",
+    "label": "문단 1",
+    "type": "textarea",
+    "order": 130
+  },
+  "roadmap.eyebrow": {
+    "group": "roadmap",
+    "groupLabel": "2026 로드맵",
+    "label": "라벨",
+    "type": "text",
+    "order": 131
+  },
+  "roadmap.title": {
+    "group": "roadmap",
+    "groupLabel": "2026 로드맵",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 132
+  },
+  "roadmap.lead": {
+    "group": "roadmap",
+    "groupLabel": "2026 로드맵",
+    "label": "설명",
+    "type": "text",
+    "order": 133
+  },
+  "news0.img": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "이미지",
+    "type": "image",
+    "order": 134
+  },
+  "news0.badge": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "분기 뱃지",
+    "type": "text",
+    "order": 135
+  },
+  "news0.tag": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "태그",
+    "type": "text",
+    "order": 136
+  },
+  "news0.title": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "제목",
+    "type": "text",
+    "order": 137
+  },
+  "news0.desc": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "설명",
+    "type": "textarea",
+    "order": 138
+  },
+  "news0.author": {
+    "group": "news0",
+    "groupLabel": "로드맵 카드 1",
+    "label": "작성자",
+    "type": "text",
+    "order": 139
+  },
+  "news1.img": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "이미지",
+    "type": "image",
+    "order": 140
+  },
+  "news1.badge": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "분기 뱃지",
+    "type": "text",
+    "order": 141
+  },
+  "news1.tag": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "태그",
+    "type": "text",
+    "order": 142
+  },
+  "news1.title": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "제목",
+    "type": "text",
+    "order": 143
+  },
+  "news1.desc": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "설명",
+    "type": "textarea",
+    "order": 144
+  },
+  "news1.author": {
+    "group": "news1",
+    "groupLabel": "로드맵 카드 2",
+    "label": "작성자",
+    "type": "text",
+    "order": 145
+  },
+  "news2.img": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "이미지",
+    "type": "image",
+    "order": 146
+  },
+  "news2.badge": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "분기 뱃지",
+    "type": "text",
+    "order": 147
+  },
+  "news2.tag": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "태그",
+    "type": "text",
+    "order": 148
+  },
+  "news2.title": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "제목",
+    "type": "text",
+    "order": 149
+  },
+  "news2.desc": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "설명",
+    "type": "textarea",
+    "order": 150
+  },
+  "news2.author": {
+    "group": "news2",
+    "groupLabel": "로드맵 카드 3",
+    "label": "작성자",
+    "type": "text",
+    "order": 151
+  },
+  "news3.img": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "이미지",
+    "type": "image",
+    "order": 152
+  },
+  "news3.badge": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "분기 뱃지",
+    "type": "text",
+    "order": 153
+  },
+  "news3.tag": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "태그",
+    "type": "text",
+    "order": 154
+  },
+  "news3.title": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "제목",
+    "type": "text",
+    "order": 155
+  },
+  "news3.desc": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "설명",
+    "type": "textarea",
+    "order": 156
+  },
+  "news3.author": {
+    "group": "news3",
+    "groupLabel": "로드맵 카드 4",
+    "label": "작성자",
+    "type": "text",
+    "order": 157
+  },
+  "identity.quote": {
+    "group": "identity",
+    "groupLabel": "브랜드 가치",
+    "label": "인용문(HTML 가능)",
+    "type": "html",
+    "order": 158
+  },
+  "identity.valDesc0": {
+    "group": "identity",
+    "groupLabel": "브랜드 가치",
+    "label": "가치 1 설명",
+    "type": "text",
+    "order": 159
+  },
+  "identity.valDesc1": {
+    "group": "identity",
+    "groupLabel": "브랜드 가치",
+    "label": "가치 2 설명",
+    "type": "text",
+    "order": 160
+  },
+  "identity.valDesc2": {
+    "group": "identity",
+    "groupLabel": "브랜드 가치",
+    "label": "가치 3 설명",
+    "type": "text",
+    "order": 161
+  },
+  "identity.valDesc3": {
+    "group": "identity",
+    "groupLabel": "브랜드 가치",
+    "label": "가치 4 설명",
+    "type": "text",
+    "order": 162
+  },
+  "promo.title": {
+    "group": "promo",
+    "groupLabel": "프로모 배너",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 163
+  },
+  "promo.body0": {
+    "group": "promo",
+    "groupLabel": "프로모 배너",
+    "label": "문단 1",
+    "type": "textarea",
+    "order": 164
+  },
+  "promo.btn0": {
+    "group": "promo",
+    "groupLabel": "프로모 배너",
+    "label": "버튼 1",
+    "type": "html",
+    "order": 165
+  },
+  "contact.eyebrow": {
+    "group": "contact",
+    "groupLabel": "문의(CTA)",
+    "label": "라벨",
+    "type": "text",
+    "order": 166
+  },
+  "contact.title": {
+    "group": "contact",
+    "groupLabel": "문의(CTA)",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 167
+  },
+  "contact.body": {
+    "group": "contact",
+    "groupLabel": "문의(CTA)",
+    "label": "설명",
+    "type": "textarea",
+    "order": 168
+  },
+  "contact.btn1": {
+    "group": "contact",
+    "groupLabel": "문의(CTA)",
+    "label": "버튼1",
+    "type": "html",
+    "order": 169
+  },
+  "contact.btn2": {
+    "group": "contact",
+    "groupLabel": "문의(CTA)",
+    "label": "버튼2",
+    "type": "text",
+    "order": 170
+  },
+  "portfolio.eyebrow": {
+    "group": "portfolio",
+    "groupLabel": "포트폴리오",
+    "label": "라벨",
+    "type": "text",
+    "order": 171
+  },
+  "portfolio.title": {
+    "group": "portfolio",
+    "groupLabel": "포트폴리오",
+    "label": "제목(HTML 가능)",
+    "type": "html",
+    "order": 172
+  },
+  "portfolio.lead": {
+    "group": "portfolio",
+    "groupLabel": "포트폴리오",
+    "label": "설명",
+    "type": "textarea",
+    "order": 173
+  },
+  "pf0.img": {
+    "group": "pf0",
+    "groupLabel": "포트폴리오 1",
+    "label": "이미지",
+    "type": "image",
+    "order": 174
+  },
+  "pf0.title": {
+    "group": "pf0",
+    "groupLabel": "포트폴리오 1",
+    "label": "제목",
+    "type": "text",
+    "order": 175
+  },
+  "pf0.desc": {
+    "group": "pf0",
+    "groupLabel": "포트폴리오 1",
+    "label": "설명",
+    "type": "text",
+    "order": 176
+  },
+  "pf0.href": {
+    "group": "pf0",
+    "groupLabel": "포트폴리오 1",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 177
+  },
+  "pf1.img": {
+    "group": "pf1",
+    "groupLabel": "포트폴리오 2",
+    "label": "이미지",
+    "type": "image",
+    "order": 178
+  },
+  "pf1.title": {
+    "group": "pf1",
+    "groupLabel": "포트폴리오 2",
+    "label": "제목",
+    "type": "html",
+    "order": 179
+  },
+  "pf1.desc": {
+    "group": "pf1",
+    "groupLabel": "포트폴리오 2",
+    "label": "설명",
+    "type": "text",
+    "order": 180
+  },
+  "pf1.href": {
+    "group": "pf1",
+    "groupLabel": "포트폴리오 2",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 181
+  },
+  "pf2.img": {
+    "group": "pf2",
+    "groupLabel": "포트폴리오 3",
+    "label": "이미지",
+    "type": "image",
+    "order": 182
+  },
+  "pf2.title": {
+    "group": "pf2",
+    "groupLabel": "포트폴리오 3",
+    "label": "제목",
+    "type": "text",
+    "order": 183
+  },
+  "pf2.desc": {
+    "group": "pf2",
+    "groupLabel": "포트폴리오 3",
+    "label": "설명",
+    "type": "text",
+    "order": 184
+  },
+  "pf2.href": {
+    "group": "pf2",
+    "groupLabel": "포트폴리오 3",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 185
+  },
+  "pf3.img": {
+    "group": "pf3",
+    "groupLabel": "포트폴리오 4",
+    "label": "이미지",
+    "type": "image",
+    "order": 186
+  },
+  "pf3.title": {
+    "group": "pf3",
+    "groupLabel": "포트폴리오 4",
+    "label": "제목",
+    "type": "text",
+    "order": 187
+  },
+  "pf3.desc": {
+    "group": "pf3",
+    "groupLabel": "포트폴리오 4",
+    "label": "설명",
+    "type": "text",
+    "order": 188
+  },
+  "pf3.href": {
+    "group": "pf3",
+    "groupLabel": "포트폴리오 4",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 189
+  },
+  "pf4.img": {
+    "group": "pf4",
+    "groupLabel": "포트폴리오 5",
+    "label": "이미지",
+    "type": "image",
+    "order": 190
+  },
+  "pf4.title": {
+    "group": "pf4",
+    "groupLabel": "포트폴리오 5",
+    "label": "제목",
+    "type": "text",
+    "order": 191
+  },
+  "pf4.desc": {
+    "group": "pf4",
+    "groupLabel": "포트폴리오 5",
+    "label": "설명",
+    "type": "text",
+    "order": 192
+  },
+  "pf4.href": {
+    "group": "pf4",
+    "groupLabel": "포트폴리오 5",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 193
+  },
+  "pf5.img": {
+    "group": "pf5",
+    "groupLabel": "포트폴리오 6",
+    "label": "이미지",
+    "type": "image",
+    "order": 194
+  },
+  "pf5.title": {
+    "group": "pf5",
+    "groupLabel": "포트폴리오 6",
+    "label": "제목",
+    "type": "text",
+    "order": 195
+  },
+  "pf5.desc": {
+    "group": "pf5",
+    "groupLabel": "포트폴리오 6",
+    "label": "설명",
+    "type": "text",
+    "order": 196
+  },
+  "pf5.href": {
+    "group": "pf5",
+    "groupLabel": "포트폴리오 6",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 197
+  },
+  "pf6.img": {
+    "group": "pf6",
+    "groupLabel": "포트폴리오 7",
+    "label": "이미지",
+    "type": "image",
+    "order": 198
+  },
+  "pf6.title": {
+    "group": "pf6",
+    "groupLabel": "포트폴리오 7",
+    "label": "제목",
+    "type": "text",
+    "order": 199
+  },
+  "pf6.desc": {
+    "group": "pf6",
+    "groupLabel": "포트폴리오 7",
+    "label": "설명",
+    "type": "text",
+    "order": 200
+  },
+  "pf6.href": {
+    "group": "pf6",
+    "groupLabel": "포트폴리오 7",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 201
+  },
+  "pf7.img": {
+    "group": "pf7",
+    "groupLabel": "포트폴리오 8",
+    "label": "이미지",
+    "type": "image",
+    "order": 202
+  },
+  "pf7.title": {
+    "group": "pf7",
+    "groupLabel": "포트폴리오 8",
+    "label": "제목",
+    "type": "text",
+    "order": 203
+  },
+  "pf7.desc": {
+    "group": "pf7",
+    "groupLabel": "포트폴리오 8",
+    "label": "설명",
+    "type": "text",
+    "order": 204
+  },
+  "pf7.href": {
+    "group": "pf7",
+    "groupLabel": "포트폴리오 8",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 205
+  },
+  "pf8.img": {
+    "group": "pf8",
+    "groupLabel": "포트폴리오 9",
+    "label": "이미지",
+    "type": "image",
+    "order": 206
+  },
+  "pf8.title": {
+    "group": "pf8",
+    "groupLabel": "포트폴리오 9",
+    "label": "제목",
+    "type": "text",
+    "order": 207
+  },
+  "pf8.desc": {
+    "group": "pf8",
+    "groupLabel": "포트폴리오 9",
+    "label": "설명",
+    "type": "text",
+    "order": 208
+  },
+  "pf8.href": {
+    "group": "pf8",
+    "groupLabel": "포트폴리오 9",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 209
+  },
+  "pf9.img": {
+    "group": "pf9",
+    "groupLabel": "포트폴리오 10",
+    "label": "이미지",
+    "type": "image",
+    "order": 210
+  },
+  "pf9.title": {
+    "group": "pf9",
+    "groupLabel": "포트폴리오 10",
+    "label": "제목",
+    "type": "text",
+    "order": 211
+  },
+  "pf9.desc": {
+    "group": "pf9",
+    "groupLabel": "포트폴리오 10",
+    "label": "설명",
+    "type": "text",
+    "order": 212
+  },
+  "pf9.href": {
+    "group": "pf9",
+    "groupLabel": "포트폴리오 10",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 213
+  },
+  "pf10.img": {
+    "group": "pf10",
+    "groupLabel": "포트폴리오 11",
+    "label": "이미지",
+    "type": "image",
+    "order": 214
+  },
+  "pf10.title": {
+    "group": "pf10",
+    "groupLabel": "포트폴리오 11",
+    "label": "제목",
+    "type": "text",
+    "order": 215
+  },
+  "pf10.desc": {
+    "group": "pf10",
+    "groupLabel": "포트폴리오 11",
+    "label": "설명",
+    "type": "text",
+    "order": 216
+  },
+  "pf10.href": {
+    "group": "pf10",
+    "groupLabel": "포트폴리오 11",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 217
+  },
+  "pf11.img": {
+    "group": "pf11",
+    "groupLabel": "포트폴리오 12",
+    "label": "이미지",
+    "type": "image",
+    "order": 218
+  },
+  "pf11.title": {
+    "group": "pf11",
+    "groupLabel": "포트폴리오 12",
+    "label": "제목",
+    "type": "text",
+    "order": 219
+  },
+  "pf11.desc": {
+    "group": "pf11",
+    "groupLabel": "포트폴리오 12",
+    "label": "설명",
+    "type": "text",
+    "order": 220
+  },
+  "pf11.href": {
+    "group": "pf11",
+    "groupLabel": "포트폴리오 12",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 221
+  },
+  "pf12.img": {
+    "group": "pf12",
+    "groupLabel": "포트폴리오 13",
+    "label": "이미지",
+    "type": "image",
+    "order": 222
+  },
+  "pf12.title": {
+    "group": "pf12",
+    "groupLabel": "포트폴리오 13",
+    "label": "제목",
+    "type": "text",
+    "order": 223
+  },
+  "pf12.desc": {
+    "group": "pf12",
+    "groupLabel": "포트폴리오 13",
+    "label": "설명",
+    "type": "text",
+    "order": 224
+  },
+  "pf12.href": {
+    "group": "pf12",
+    "groupLabel": "포트폴리오 13",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 225
+  },
+  "pf13.img": {
+    "group": "pf13",
+    "groupLabel": "포트폴리오 14",
+    "label": "이미지",
+    "type": "image",
+    "order": 226
+  },
+  "pf13.title": {
+    "group": "pf13",
+    "groupLabel": "포트폴리오 14",
+    "label": "제목",
+    "type": "text",
+    "order": 227
+  },
+  "pf13.desc": {
+    "group": "pf13",
+    "groupLabel": "포트폴리오 14",
+    "label": "설명",
+    "type": "text",
+    "order": 228
+  },
+  "pf13.href": {
+    "group": "pf13",
+    "groupLabel": "포트폴리오 14",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 229
+  },
+  "pf14.img": {
+    "group": "pf14",
+    "groupLabel": "포트폴리오 15",
+    "label": "이미지",
+    "type": "image",
+    "order": 230
+  },
+  "pf14.title": {
+    "group": "pf14",
+    "groupLabel": "포트폴리오 15",
+    "label": "제목",
+    "type": "text",
+    "order": 231
+  },
+  "pf14.desc": {
+    "group": "pf14",
+    "groupLabel": "포트폴리오 15",
+    "label": "설명",
+    "type": "text",
+    "order": 232
+  },
+  "pf14.href": {
+    "group": "pf14",
+    "groupLabel": "포트폴리오 15",
+    "label": "링크 URL",
+    "type": "url",
+    "order": 233
+  },
+  "pf15.img": {
+    "group": "pf15",
+    "groupLabel": "포트폴리오 16",
+    "label": "이미지",
+    "type": "image",
+    "order": 234
+  },
+  "pf15.title": {
+    "group": "pf15",
+    "groupLabel": "포트폴리오 16",
+    "label": "제목",
+    "type": "text",
+    "order": 235
+  },
+  "pf15.desc": {
+    "group": "pf15",
+    "groupLabel": "포트폴리오 16",
+    "label": "설명",
+    "type": "text",
+    "order": 236
+  },
+  "footer.brandKo": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "브랜드 부제",
+    "type": "text",
+    "order": 237
+  },
+  "footer.col0_title": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 1 제목",
+    "type": "text",
+    "order": 238
+  },
+  "footer.col0_link0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 1 링크 1",
+    "type": "text",
+    "order": 239
+  },
+  "footer.col0_link1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 1 링크 2",
+    "type": "text",
+    "order": 240
+  },
+  "footer.col0_link2": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 1 링크 3",
+    "type": "text",
+    "order": 241
+  },
+  "footer.col0_link3": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 1 링크 4",
+    "type": "text",
+    "order": 242
+  },
+  "footer.col1_title": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 2 제목",
+    "type": "text",
+    "order": 243
+  },
+  "footer.col1_link0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 2 링크 1",
+    "type": "text",
+    "order": 244
+  },
+  "footer.col1_link1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 2 링크 2",
+    "type": "text",
+    "order": 245
+  },
+  "footer.col1_link2": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 2 링크 3",
+    "type": "text",
+    "order": 246
+  },
+  "footer.col1_link3": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 2 링크 4",
+    "type": "text",
+    "order": 247
+  },
+  "footer.col2_title": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 제목",
+    "type": "text",
+    "order": 248
+  },
+  "footer.col2_link0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 링크 1",
+    "type": "text",
+    "order": 249
+  },
+  "footer.col2_link1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 링크 2",
+    "type": "text",
+    "order": 250
+  },
+  "footer.col2_link2": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 링크 3",
+    "type": "text",
+    "order": 251
+  },
+  "footer.col2_link3": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 링크 4",
+    "type": "text",
+    "order": 252
+  },
+  "footer.col2_link4": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 3 링크 5",
+    "type": "text",
+    "order": 253
+  },
+  "footer.col3_title": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 4 제목",
+    "type": "text",
+    "order": 254
+  },
+  "footer.col3_link0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 4 링크 1",
+    "type": "text",
+    "order": 255
+  },
+  "footer.col3_link1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 4 링크 2",
+    "type": "text",
+    "order": 256
+  },
+  "footer.col3_link2": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 4 링크 3",
+    "type": "text",
+    "order": 257
+  },
+  "footer.col3_link3": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 4 링크 4",
+    "type": "text",
+    "order": 258
+  },
+  "footer.col4_title": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 5 제목",
+    "type": "text",
+    "order": 259
+  },
+  "footer.col4_link0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 5 링크 1",
+    "type": "text",
+    "order": 260
+  },
+  "footer.col4_link1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 5 링크 2",
+    "type": "text",
+    "order": 261
+  },
+  "footer.col4_link2": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 5 링크 3",
+    "type": "text",
+    "order": 262
+  },
+  "footer.col4_link3": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "컬럼 5 링크 4",
+    "type": "text",
+    "order": 263
+  },
+  "footer.bottom0": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "하단 문구 1",
+    "type": "html",
+    "order": 264
+  },
+  "footer.bottom1": {
+    "group": "footer",
+    "groupLabel": "푸터",
+    "label": "하단 문구 2",
+    "type": "html",
+    "order": 265
+  },
+  "theme.brand": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "브랜드 메인 색상",
+    "type": "color",
+    "order": 266
+  },
+  "theme.cyan": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "보조(시안) 색상",
+    "type": "color",
+    "order": 267
+  },
+  "theme.ink": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "기본 텍스트 색상",
+    "type": "color",
+    "order": 268
+  },
+  "theme.headingFont": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "제목 폰트",
+    "type": "text",
+    "order": 269
+  },
+  "theme.bodyFont": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "본문 폰트",
+    "type": "text",
+    "order": 270
+  },
+  "theme.scale": {
+    "group": "theme",
+    "groupLabel": "타이포그래피 · 색상",
+    "label": "글자 크기 배율(0.9~1.2)",
+    "type": "text",
+    "order": 271
+  }
+}

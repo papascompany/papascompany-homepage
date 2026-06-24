@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8" >
+<meta name="viewport" content="width=device-width,initial-scale=1" >
 <title>PapasCompany — 세상의 모든이야기를 기억하세요...</title>
-<meta name="description" content="파파스컴퍼니 — 사람의 이야기를 기록하고, 출판하고, POD솔루션을 보급합니다. AI 자서전 '나의이야기', POD 통합솔루션, Storywork Editor, 전시·공간 콘텐츠." />
+<meta name="description" content="파파스컴퍼니 — 사람의 이야기를 기록하고, 출판하고, POD솔루션을 보급합니다. AI 자서전 '나의이야기', POD 통합솔루션, Storywork Editor, 전시·공간 콘텐츠." >
 
 <!-- Pretendard Variable (CDN) with system font fallback -->
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" >
 
 <!-- Image preconnect for Unsplash -->
-<link rel="preconnect" href="https://picsum.photos" crossorigin />
+<link rel="preconnect" href="https://picsum.photos" crossorigin >
 
 <style>
 /* ====================================================================
@@ -616,70 +616,70 @@ section.editorial{padding:96px 0}
 <!-- ============== NAV ============== -->
 <nav class="nav" id="nav">
   <a href="#top" class="nav-brand">
-    <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-nav" />
-    <span class="ko">(주)파파스컴퍼니</span>
+    <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-nav" >
+    <span class="ko" data-k="nav.brandKo">(주)파파스컴퍼니</span>
   </a>
   <div class="nav-links">
-    <a href="#solutions" class="active">솔루션</a>
-    <a href="#pipeline">파이프라인</a>
-    <a href="#stats">실적</a>
-    <a href="#roadmap">로드맵</a>
-    <a href="#identity">브랜드</a>
-    <a href="#contact">문의</a>
-    <a href="#portfolio">포트폴리오</a>
+    <a href="#solutions" class="active" data-k="nav.link0">솔루션</a>
+    <a href="#pipeline" data-k="nav.link1">파이프라인</a>
+    <a href="#stats" data-k="nav.link2">실적</a>
+    <a href="#roadmap" data-k="nav.link3">로드맵</a>
+    <a href="#identity" data-k="nav.link4">브랜드</a>
+    <a href="#contact" data-k="nav.link5">문의</a>
+    <a href="#portfolio" data-k="nav.link6">포트폴리오</a>
   </div>
   <div class="nav-actions">
     <button class="nav-search" aria-label="검색">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
     </button>
-    <button class="btn btn-primary btn-sm" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    <button class="btn btn-primary btn-sm" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="nav.cta">
       문의하기
     </button>
     <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
-      <svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      <svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      <svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
     </button>
   </div>
 </nav>
 
 <!-- ============== MOBILE MENU ============== -->
 <div class="mobile-nav" id="mobile-nav">
-  <a href="#solutions">솔루션</a>
-  <a href="#pipeline">파이프라인</a>
-  <a href="#stats">실적</a>
-  <a href="#roadmap">로드맵</a>
-  <a href="#identity">브랜드</a>
-  <a href="#contact">문의</a>
-  <a href="#portfolio">포트폴리오</a>
+  <a href="#solutions" data-k="nav.link0">솔루션</a>
+  <a href="#pipeline" data-k="nav.link1">파이프라인</a>
+  <a href="#stats" data-k="nav.link2">실적</a>
+  <a href="#roadmap" data-k="nav.link3">로드맵</a>
+  <a href="#identity" data-k="nav.link4">브랜드</a>
+  <a href="#contact" data-k="nav.link5">문의</a>
+  <a href="#portfolio" data-k="nav.link6">포트폴리오</a>
   <button class="btn btn-primary mobile-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">문의하기</button>
 </div>
 
 <!-- ============== HERO ============== -->
 <section class="hero" id="top">
   <div class="hero-bg bg-pod">
-    <div class="card-art" style="opacity:0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span class="markwm">PAPAS</span></div>
-    <img src="https://picsum.photos/seed/papas-01/2000/1125" alt="" loading="eager" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+    <div class="card-art" style="opacity:0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div>
+    <img src="https://picsum.photos/seed/papas-01/2000/1125" alt loading="eager" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="hero.bg">
   </div>
   <div class="hero-inner">
-    <div class="hero-eyebrow">
+    <div class="hero-eyebrow" data-k="hero.eyebrow">
       <span class="pulse"></span>
       Papas Company · IP × Memoir × Print Tech
     </div>
-    <h1>
-      기억은 사라지지만<br/>
+    <h1 data-k="hero.title">
+      기억은 사라지지만<br>
       이야기는 <strong>남습니다.</strong>
       <span class="en-tag">Memory fades — but story stays. Papas builds the engines that turn human memory into legacy.</span>
     </h1>
-    <p class="hero-sub">
+    <p class="hero-sub" data-k="hero.sub">
       파파스컴퍼니는 사람의 이야기를 기록하고, 출판하고, POD솔루션을 보급하는 컴퍼니입니다.
       AI 자서전 엔진, POD 통합 솔루션, Storywork Editor, 그리고 전시·공간 콘텐츠를 하나의 흐름으로 연결합니다.
     </p>
     <div class="hero-actions">
-      <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})">
+      <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="hero.btn1">
         솔루션 살펴보기
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
       </button>
-      <button class="btn btn-ghost-dark" onclick="document.getElementById('story-intro').scrollIntoView({behavior:'smooth'})">회사 소개</button>
+      <button class="btn btn-ghost-dark" onclick="document.getElementById('story-intro').scrollIntoView({behavior:'smooth'})" data-k="hero.btn2">회사 소개</button>
     </div>
   </div>
 </section>
@@ -688,36 +688,36 @@ section.editorial{padding:96px 0}
 <div class="thumb-tray-wrap">
   <div class="thumb-tray" id="thumbTray">
     <a href="#story-intro" class="thumb active">
-      <div class="thumb-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div><img src="https://picsum.photos/seed/papas-01/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">회사 소개</div>
+      <div class="thumb-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></div><img src="https://picsum.photos/seed/papas-01/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img0"></div>
+      <div class="thumb-label" data-k="thumbs.label0">회사 소개</div>
     </a>
     <a href="#solutions" class="thumb">
-      <div class="thumb-img bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><img src="https://picsum.photos/seed/papas-02/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">POD & AI솔루션</div>
+      <div class="thumb-img bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div><img src="https://picsum.photos/seed/papas-02/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img1"></div>
+      <div class="thumb-label" data-k="thumbs.label1">POD & AI솔루션</div>
     </a>
     <a href="#lineup" class="thumb">
-      <div class="thumb-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div><img src="https://picsum.photos/seed/papas-03/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">제품 라인업</div>
+      <div class="thumb-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg></div><img src="https://picsum.photos/seed/papas-03/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img2"></div>
+      <div class="thumb-label" data-k="thumbs.label2">제품 라인업</div>
     </a>
     <a href="#pipeline" class="thumb">
-      <div class="thumb-img bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 11l10-4M7 13l10 4"/></svg></div><img src="https://picsum.photos/seed/papas-04/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">파이프라인</div>
+      <div class="thumb-img bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.2"></circle><circle cx="19" cy="6" r="2.2"></circle><circle cx="19" cy="18" r="2.2"></circle><path d="M7 11l10-4M7 13l10 4"></path></svg></div><img src="https://picsum.photos/seed/papas-04/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img3"></div>
+      <div class="thumb-label" data-k="thumbs.label3">파이프라인</div>
     </a>
     <a href="#stats" class="thumb">
-      <div class="thumb-img bg-cool"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"/><rect x="6" y="12" width="3" height="8"/><rect x="11" y="6" width="3" height="14"/><rect x="16" y="9" width="3" height="11"/></svg></div><img src="https://picsum.photos/seed/papas-05/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">실적·시장</div>
+      <div class="thumb-img bg-cool"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"></line><rect x="6" y="12" width="3" height="8"></rect><rect x="11" y="6" width="3" height="14"></rect><rect x="16" y="9" width="3" height="11"></rect></svg></div><img src="https://picsum.photos/seed/papas-05/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img4"></div>
+      <div class="thumb-label" data-k="thumbs.label4">실적·시장</div>
     </a>
     <a href="#anniversary" class="thumb">
-      <div class="thumb-img bg-warm"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div><img src="https://picsum.photos/seed/papas-06/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">브랜드 스토리</div>
+      <div class="thumb-img bg-warm"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></div><img src="https://picsum.photos/seed/papas-06/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img5"></div>
+      <div class="thumb-label" data-k="thumbs.label5">브랜드 스토리</div>
     </a>
     <a href="#roadmap" class="thumb">
-      <div class="thumb-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8 6h6a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4h-4a4 4 0 0 0-4 4"/></svg></div><img src="https://picsum.photos/seed/papas-07/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">2026 로드맵</div>
+      <div class="thumb-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="18" r="2.5"></circle><path d="M8 6h6a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4h-4a4 4 0 0 0-4 4"></path></svg></div><img src="https://picsum.photos/seed/papas-07/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img6"></div>
+      <div class="thumb-label" data-k="thumbs.label6">2026 로드맵</div>
     </a>
     <a href="#contact" class="thumb">
-      <div class="thumb-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg></div><img src="https://picsum.photos/seed/papas-08/240/144" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-      <div class="thumb-label">문의</div>
+      <div class="thumb-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 7 9-7"></path></svg></div><img src="https://picsum.photos/seed/papas-08/240/144" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="thumbs.img7"></div>
+      <div class="thumb-label" data-k="thumbs.label7">문의</div>
     </a>
   </div>
 </div>
@@ -727,21 +727,21 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="intro-block">
       <div class="copy reveal">
-        <div class="section-eyebrow">파파스컴퍼니 소개</div>
-        <h2>사람의 이야기를<br/>기술로 <strong>이어 갑니다.</strong></h2>
-        <p class="lead-sub">Memoir × IP × Print Technology Studio</p>
-        <p>
+        <div class="section-eyebrow" data-k="story.eyebrow">파파스컴퍼니 소개</div>
+        <h2 data-k="story.title">사람의 이야기를<br>기술로 <strong>이어 갑니다.</strong></h2>
+        <p class="lead-sub" data-k="story.leadSub">Memoir × IP × Print Technology Studio</p>
+        <p data-k="story.body">
           시간이 지나면 가장 먼저 잊히는 것은 평범한 일상입니다.
           파파스컴퍼니는 사라질 이야기를 기록하고, 출판하고, 공간으로 펼치는
           IP 콘텐츠 컴퍼니입니다. 하나의 인터뷰가 한 권의 자서전이 되고,
           한 권의 자서전이 전시와 공간으로 확장되는 흐름을 자체 기술로 운영합니다.
         </p>
-        <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})">
+        <button class="btn btn-primary" onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" data-k="story.btn">
           자세히 보기
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
         </button>
       </div>
-      <div class="intro-image reveal bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-09/1400/875" alt="기억과 이야기" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+      <div class="intro-image reveal bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-09/1400/875" alt="기억과 이야기" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="story.img">
       </div>
     </div>
   </div>
@@ -752,77 +752,77 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">Solutions</div>
-        <h2 class="section-title">네 개의 솔루션,<br/>하나의 <strong>스토리 시스템.</strong></h2>
+        <div class="section-eyebrow" data-k="solutions.eyebrow">Solutions</div>
+        <h2 class="section-title" data-k="solutions.title">네 개의 솔루션,<br>하나의 <strong>스토리 시스템.</strong></h2>
       </div>
-      <p class="section-lead">각 카드를 클릭하면 기능, 기술 스택, 고객 가치가 자세히 펼쳐집니다.</p>
+      <p class="section-lead" data-k="solutions.lead">각 카드를 클릭하면 기능, 기술 스택, 고객 가치가 자세히 펼쳐집니다.</p>
     </div>
 
     <div class="sol-grid reveal-stagger">
       <article class="sol-card" data-modal="m1">
-        <div class="sol-card-img bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag">AI Memoir</span>
-          <img src="https://picsum.photos/seed/papas-02/1400/875" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="sol-card-img bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag" data-k="sol_card0.tag">AI Memoir</span>
+          <img src="https://picsum.photos/seed/papas-02/1400/875" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="sol_card0.img">
         </div>
         <div class="sol-card-body">
-          <h3>AI 자서전 '나의이야기'</h3>
-          <div class="sol-card-en">AI Memoir Engine for Senior Life</div>
-          <p class="sol-card-desc">AI 인터뷰가 어르신의 기억을 끌어내고, 사진을 복원하고, 한 권의 자서전과 전시 콘텐츠로 자동 편집합니다.</p>
+          <h3 data-k="sol_card0.title">AI 자서전 '나의이야기'</h3>
+          <div class="sol-card-en" data-k="sol_card0.en">AI Memoir Engine for Senior Life</div>
+          <p class="sol-card-desc" data-k="sol_card0.desc">AI 인터뷰가 어르신의 기억을 끌어내고, 사진을 복원하고, 한 권의 자서전과 전시 콘텐츠로 자동 편집합니다.</p>
           <div class="sol-card-tags">
             <span>AI Interview</span><span>Real-ESRGAN</span><span>B2C · B2B · B2G</span>
           </div>
           <div class="sol-card-cta">
-            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
           </div>
         </div>
       </article>
 
       <article class="sol-card" data-modal="m2">
-        <div class="sol-card-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"/><path d="M6 9V4h12v5M6 18v3h12v-3"/><circle cx="17" cy="13" r="0.7" fill="currentColor"/></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag">POD Suite</span>
-          <img src="https://picsum.photos/seed/papas-03/1400/875" alt="POD 통합 솔루션" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="sol-card-img bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"></rect><path d="M6 9V4h12v5M6 18v3h12v-3"></path><circle cx="17" cy="13" r="0.7" fill="currentColor"></circle></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag" data-k="sol_card1.tag">POD Suite</span>
+          <img src="https://picsum.photos/seed/papas-03/1400/875" alt="POD 통합 솔루션" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="sol_card1.img">
         </div>
         <div class="sol-card-body">
-          <h3>POD 통합 솔루션</h3>
-          <div class="sol-card-en">Print-On-Demand Operating Stack</div>
-          <p class="sol-card-desc">자동견적·웹투프린트·온디맨드·인쇄 전용 MES·자동화까지 묶은 통합 인쇄 운영 스택. 인쇄소를 SaaS급으로 운영합니다.</p>
+          <h3 data-k="sol_card1.title">POD 통합 솔루션</h3>
+          <div class="sol-card-en" data-k="sol_card1.en">Print-On-Demand Operating Stack</div>
+          <p class="sol-card-desc" data-k="sol_card1.desc">자동견적·웹투프린트·온디맨드·인쇄 전용 MES·자동화까지 묶은 통합 인쇄 운영 스택. 인쇄소를 SaaS급으로 운영합니다.</p>
           <div class="sol-card-tags">
             <span>Auto Quote</span><span>Web2Print</span><span>MES</span><span>Ondemand</span>
           </div>
           <div class="sol-card-cta">
-            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
           </div>
         </div>
       </article>
 
       <article class="sol-card" data-modal="m3">
-        <div class="sol-card-img bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"/><line x1="13" y1="13" x2="20" y2="20"/></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag">Authoring</span>
-          <img src="https://picsum.photos/seed/papas-04/1400/875" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="sol-card-img bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"></path><line x1="13" y1="13" x2="20" y2="20"></line></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag" data-k="sol_card2.tag">Authoring</span>
+          <img src="https://picsum.photos/seed/papas-04/1400/875" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="sol_card2.img">
         </div>
         <div class="sol-card-body">
-          <h3>Storywork Editor</h3>
-          <div class="sol-card-en">Authoring Engine for Story IP</div>
-          <p class="sol-card-desc">POD출판·전시·인쇄물 콘텐츠를 한 워크스페이스에서 편집·렌더·출판. Editor / Admin / API / AI Worker 풀스택 IP 저작 엔진.</p>
+          <h3 data-k="sol_card2.title">Storywork Editor</h3>
+          <div class="sol-card-en" data-k="sol_card2.en">Authoring Engine for Story IP</div>
+          <p class="sol-card-desc" data-k="sol_card2.desc">POD출판·전시·인쇄물 콘텐츠를 한 워크스페이스에서 편집·렌더·출판. Editor / Admin / API / AI Worker 풀스택 IP 저작 엔진.</p>
           <div class="sol-card-tags">
             <span>WYSIWYG</span><span>Print-Ready Render</span><span>Multi-Surface</span>
           </div>
           <div class="sol-card-cta">
-            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
           </div>
         </div>
       </article>
 
       <article class="sol-card" data-modal="m4">
-        <div class="sol-card-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag">Exhibition</span>
-          <img src="https://picsum.photos/seed/papas-08/1400/875" alt="전시·공간 콘텐츠" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="sol-card-img bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg><span class="markwm">PAPAS</span></div><span class="sol-card-tag" data-k="sol_card3.tag">Exhibition</span>
+          <img src="https://picsum.photos/seed/papas-08/1400/875" alt="전시·공간 콘텐츠" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="sol_card3.img">
         </div>
         <div class="sol-card-body">
-          <h3>전시 · 공간 콘텐츠</h3>
-          <div class="sol-card-en">IP-driven Offline Experience</div>
-          <p class="sol-card-desc">갤러리누리 등 IP 기반 오프라인 전시·공간 사업. 자서전 콘텐츠를 큐레이션·미디어·POD인쇄 출판 서적으로 공간과 함께 합니다.</p>
+          <h3 data-k="sol_card3.title">전시 · 공간 콘텐츠</h3>
+          <div class="sol-card-en" data-k="sol_card3.en">IP-driven Offline Experience</div>
+          <p class="sol-card-desc" data-k="sol_card3.desc">갤러리누리 등 IP 기반 오프라인 전시·공간 사업. 자서전 콘텐츠를 큐레이션·미디어·POD인쇄 출판 서적으로 공간과 함께 합니다.</p>
           <div class="sol-card-tags">
             <span>Curation</span><span>Print Kit</span><span>Media · Space</span>
           </div>
           <div class="sol-card-cta">
-            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></span>
           </div>
         </div>
       </article>
@@ -835,66 +835,66 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">Product Lineup</div>
-        <h2 class="section-title">파파스의 <strong>제품 라인업</strong>을 만나보세요</h2>
+        <div class="section-eyebrow" data-k="lineup.eyebrow">Product Lineup</div>
+        <h2 class="section-title" data-k="lineup.title">파파스의 <strong>제품 라인업</strong>을 만나보세요</h2>
       </div>
-      <p class="section-lead">Printabel POD Studio 솔루션 4종과 POD 통합 AI 솔루션의 5개 서브 제품을 한눈에 살펴봅니다.</p>
+      <p class="section-lead" data-k="lineup.lead">Printabel POD Studio 솔루션 4종과 POD 통합 AI 솔루션의 5개 서브 제품을 한눈에 살펴봅니다.</p>
     </div>
 
     <div class="lineup-tabs reveal">
-      <button class="on">전체 라인업</button>
-      <button>주력 제품</button>
-      <button>Printable Base Solutions</button>
+      <button class="on" data-k="lineup.tab0">전체 라인업</button>
+      <button data-k="lineup.tab1">주력 제품</button>
+      <button data-k="lineup.tab2">Printable Base Solutions</button>
     </div>
 
     <div class="lineup-grid reveal-stagger">
       <a class="tile" href="#" data-modal-tile="m1">
-        <div class="tile-poster bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">AI Memoir</span>
-          <img src="https://picsum.photos/seed/papas-02/800/600" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile0.platform">AI Memoir</span>
+          <img src="https://picsum.photos/seed/papas-02/800/600" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile0.img">
         </div>
-        <div class="tile-info"><h4>AI 자서전 '나의이야기'</h4><p>대화형 AI 인터뷰 → 자서전 자동 생성</p></div>
+        <div class="tile-info"><h4 data-k="tile0.title">AI 자서전 '나의이야기'</h4><p data-k="tile0.desc">대화형 AI 인터뷰 → 자서전 자동 생성</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m2">
-        <div class="tile-poster bg-cool"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">POD</span>
-          <img src="https://picsum.photos/seed/papas-10/800/600" alt="POD 자동견적" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-cool"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M9 13h6M9 17h4"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile1.platform">POD</span>
+          <img src="https://picsum.photos/seed/papas-10/800/600" alt="POD 자동견적" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile1.img">
         </div>
-        <div class="tile-info"><h4>POD 자동견적 솔루션</h4><p>판형·페이지·후가공별 실시간 견적 API</p></div>
+        <div class="tile-info"><h4 data-k="tile1.title">POD 자동견적 솔루션</h4><p data-k="tile1.desc">판형·페이지·후가공별 실시간 견적 API</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m2">
-        <div class="tile-poster bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="6.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="9" cy="6.5" r="0.5" fill="currentColor"/><path d="M8 13h6"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">POD</span>
-          <img src="https://picsum.photos/seed/papas-11/800/600" alt="HTML5 Web2Print" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><circle cx="6.5" cy="6.5" r="0.5" fill="currentColor"></circle><circle cx="9" cy="6.5" r="0.5" fill="currentColor"></circle><path d="M8 13h6"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile2.platform">POD</span>
+          <img src="https://picsum.photos/seed/papas-11/800/600" alt="HTML5 Web2Print" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile2.img">
         </div>
-        <div class="tile-info"><h4>HTML5 Web2Print</h4><p>브라우저 디자인 → 인쇄용 PDF 자동 생성</p></div>
+        <div class="tile-info"><h4 data-k="tile2.title">HTML5 Web2Print</h4><p data-k="tile2.desc">브라우저 디자인 → 인쇄용 PDF 자동 생성</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m2">
-        <div class="tile-poster bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8L12 3 3 8v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">POD</span>
-          <img src="https://picsum.photos/seed/papas-12/800/600" alt="Ondemand Solution" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8L12 3 3 8v8l9 5 9-5V8z"></path><path d="M3 8l9 5 9-5M12 13v8"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile3.platform">POD</span>
+          <img src="https://picsum.photos/seed/papas-12/800/600" alt="Ondemand Solution" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile3.img">
         </div>
-        <div class="tile-info"><h4>Ondemand Solution</h4><p>주문-발주-출고를 1권 단위로 자동화</p></div>
+        <div class="tile-info"><h4 data-k="tile3.title">Ondemand Solution</h4><p data-k="tile3.desc">주문-발주-출고를 1권 단위로 자동화</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m2">
-        <div class="tile-poster bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"/><rect x="6" y="12" width="3" height="8"/><rect x="11" y="6" width="3" height="14"/><rect x="16" y="9" width="3" height="11"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">POD</span>
-          <img src="https://picsum.photos/seed/papas-13/800/600" alt="인쇄·출판 MES" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"></line><rect x="6" y="12" width="3" height="8"></rect><rect x="11" y="6" width="3" height="14"></rect><rect x="16" y="9" width="3" height="11"></rect></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile4.platform">POD</span>
+          <img src="https://picsum.photos/seed/papas-13/800/600" alt="인쇄·출판 MES" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile4.img">
         </div>
-        <div class="tile-info"><h4>인쇄·출판 전용 MES</h4><p>장비 가동률·납기를 실시간 가시화</p></div>
+        <div class="tile-info"><h4 data-k="tile4.title">인쇄·출판 전용 MES</h4><p data-k="tile4.desc">장비 가동률·납기를 실시간 가시화</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m2">
-        <div class="tile-poster bg-dust"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">POD</span>
-          <img src="https://picsum.photos/seed/papas-14/800/600" alt="기타 자동화 솔루션" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-dust"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile5.platform">POD</span>
+          <img src="https://picsum.photos/seed/papas-14/800/600" alt="기타 자동화 솔루션" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile5.img">
         </div>
-        <div class="tile-info"><h4>기타 자동화 솔루션</h4><p>대량 메일링 · 데이터 정합 검증 · 라우팅</p></div>
+        <div class="tile-info"><h4 data-k="tile5.title">기타 자동화 솔루션</h4><p data-k="tile5.desc">대량 메일링 · 데이터 정합 검증 · 라우팅</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m3">
-        <div class="tile-poster bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"/><line x1="13" y1="13" x2="20" y2="20"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">Authoring</span>
-          <img src="https://picsum.photos/seed/papas-15/800/600" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"></path><line x1="13" y1="13" x2="20" y2="20"></line></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile6.platform">Authoring</span>
+          <img src="https://picsum.photos/seed/papas-15/800/600" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile6.img">
         </div>
-        <div class="tile-info"><h4>Storywork Editor</h4><p>웹툰,스토리보드,콘티북·전시·웹·POD Service</p></div>
+        <div class="tile-info"><h4 data-k="tile6.title">Storywork Editor</h4><p data-k="tile6.desc">웹툰,스토리보드,콘티북·전시·웹·POD Service</p></div>
       </a>
       <a class="tile" href="#" data-modal-tile="m4">
-        <div class="tile-poster bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="markwm">PAPAS</span></div><span class="tile-platform">Exhibition</span>
-          <img src="https://picsum.photos/seed/papas-16/800/600" alt="전시·공간 콘텐츠" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="tile-poster bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg><span class="markwm">PAPAS</span></div><span class="tile-platform" data-k="tile7.platform">Exhibition</span>
+          <img src="https://picsum.photos/seed/papas-16/800/600" alt="전시·공간 콘텐츠" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="tile7.img">
         </div>
-        <div class="tile-info"><h4>전시 · 공간 콘텐츠</h4><p>IP를 큐레이션 전시로 펼치는 오프라인 채널</p></div>
+        <div class="tile-info"><h4 data-k="tile7.title">전시 · 공간 콘텐츠</h4><p data-k="tile7.desc">IP를 큐레이션 전시로 펼치는 오프라인 채널</p></div>
       </a>
     </div>
   </div>
@@ -905,61 +905,61 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">Pipeline</div>
-        <h2 class="section-title">5단계로 흐르는<br/><strong>스토리 → 출판 파이프라인.</strong></h2>
+        <div class="section-eyebrow" data-k="pipeline.eyebrow">Pipeline</div>
+        <h2 class="section-title" data-k="pipeline.title">5단계로 흐르는<br><strong>스토리 → 출판 파이프라인.</strong></h2>
       </div>
-      <p class="section-lead">인터뷰부터 전시·공간 출현까지, 한 줄의 IP가 다섯 단계의 자동화를 통과합니다.</p>
+      <p class="section-lead" data-k="pipeline.lead">인터뷰부터 전시·공간 출현까지, 한 줄의 IP가 다섯 단계의 자동화를 통과합니다.</p>
     </div>
 
     <div class="pipeline reveal">
       <div class="pl-step">
-        <div class="pl-thumb bg-warm"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge">01 · Interview</span>
-          <img src="https://picsum.photos/seed/papas-17/800/600" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="pl-thumb bg-warm"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"></path></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge" data-k="pl0.badge">01 · Interview</span>
+          <img src="https://picsum.photos/seed/papas-17/800/600" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pl0.img">
         </div>
         <div class="pl-body">
-          <h4>AI 인터뷰</h4>
-          <p>대화형 음성 인터뷰로 어르신의 생애 기억과 감정을 끌어냅니다.</p>
-          <div class="pl-stack">STT · LLM Question Tree<br/>Emotion Tagging</div>
+          <h4 data-k="pl0.title">AI 인터뷰</h4>
+          <p data-k="pl0.desc">대화형 음성 인터뷰로 어르신의 생애 기억과 감정을 끌어냅니다.</p>
+          <div class="pl-stack" data-k="pl0.stack">STT · LLM Question Tree<br>Emotion Tagging</div>
         </div>
       </div>
       <div class="pl-step">
-        <div class="pl-thumb bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.7 6.3L20 11l-6.3 1.7L12 19l-1.7-6.3L4 11l6.3-1.7L12 3zM18 4l.5 1.5L20 6l-1.5.5L18 8l-.5-1.5L16 6l1.5-.5L18 4z"/></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge">02 · Restore</span>
-          <img src="https://picsum.photos/seed/papas-18/800/600" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="pl-thumb bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.7 6.3L20 11l-6.3 1.7L12 19l-1.7-6.3L4 11l6.3-1.7L12 3zM18 4l.5 1.5L20 6l-1.5.5L18 8l-.5-1.5L16 6l1.5-.5L18 4z"></path></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge" data-k="pl1.badge">02 · Restore</span>
+          <img src="https://picsum.photos/seed/papas-18/800/600" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pl1.img">
         </div>
         <div class="pl-body">
-          <h4>AI 가공</h4>
-          <p>오래된 사진을 복원하고, 인터뷰 텍스트를 챕터·문장으로 정제합니다.</p>
-          <div class="pl-stack">Real-ESRGAN<br/>Chapter Generator</div>
+          <h4 data-k="pl1.title">AI 가공</h4>
+          <p data-k="pl1.desc">오래된 사진을 복원하고, 인터뷰 텍스트를 챕터·문장으로 정제합니다.</p>
+          <div class="pl-stack" data-k="pl1.stack">Real-ESRGAN<br>Chapter Generator</div>
         </div>
       </div>
       <div class="pl-step">
-        <div class="pl-thumb bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-13 13H4v-4L17 3zM14 6l4 4"/></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge">03 · Edit</span>
-          <img src="https://picsum.photos/seed/papas-19/800/600" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="pl-thumb bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-13 13H4v-4L17 3zM14 6l4 4"></path></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge" data-k="pl2.badge">03 · Edit</span>
+          <img src="https://picsum.photos/seed/papas-19/800/600" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pl2.img">
         </div>
         <div class="pl-body">
-          <h4>편집</h4>
-          <p>Storywork Editor에서 사진·문장·디자인을 한 화면에서 다듬습니다.</p>
-          <div class="pl-stack">Storywork WYSIWYG<br/>Template Engine</div>
+          <h4 data-k="pl2.title">편집</h4>
+          <p data-k="pl2.desc">Storywork Editor에서 사진·문장·디자인을 한 화면에서 다듬습니다.</p>
+          <div class="pl-stack" data-k="pl2.stack">Storywork WYSIWYG<br>Template Engine</div>
         </div>
       </div>
       <div class="pl-step">
-        <div class="pl-thumb bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"/><path d="M6 9V4h12v5M6 18v3h12v-3"/><circle cx="17" cy="13" r="0.7" fill="currentColor"/></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge">04 · Print</span>
-          <img src="https://picsum.photos/seed/papas-20/800/600" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="pl-thumb bg-mint"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"></rect><path d="M6 9V4h12v5M6 18v3h12v-3"></path><circle cx="17" cy="13" r="0.7" fill="currentColor"></circle></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge" data-k="pl3.badge">04 · Print</span>
+          <img src="https://picsum.photos/seed/papas-20/800/600" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pl3.img">
         </div>
         <div class="pl-body">
-          <h4>인쇄·출판</h4>
-          <p>POD 통합 솔루션이 견적·생산·납품까지 자동 처리합니다.</p>
-          <div class="pl-stack">Auto Quote · Web2Print<br/>MES · Ondemand</div>
+          <h4 data-k="pl3.title">인쇄·출판</h4>
+          <p data-k="pl3.desc">POD 통합 솔루션이 견적·생산·납품까지 자동 처리합니다.</p>
+          <div class="pl-stack" data-k="pl3.stack">Auto Quote · Web2Print<br>MES · Ondemand</div>
         </div>
       </div>
       <div class="pl-step">
-        <div class="pl-thumb bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge">05 · Exhibit</span>
-          <img src="https://picsum.photos/seed/papas-21/800/600" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        <div class="pl-thumb bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg><span class="markwm">PAPAS</span></div><span class="pl-num-badge" data-k="pl4.badge">05 · Exhibit</span>
+          <img src="https://picsum.photos/seed/papas-21/800/600" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pl4.img">
         </div>
         <div class="pl-body">
-          <h4>전시·공간화</h4>
-          <p>완성된 자서전이 갤러리·전시·공간 경험으로 확장됩니다.</p>
-          <div class="pl-stack">Curation Kit<br/>Media Wall · IP Show</div>
+          <h4 data-k="pl4.title">전시·공간화</h4>
+          <p data-k="pl4.desc">완성된 자서전이 갤러리·전시·공간 경험으로 확장됩니다.</p>
+          <div class="pl-stack" data-k="pl4.stack">Curation Kit<br>Media Wall · IP Show</div>
         </div>
       </div>
     </div>
@@ -971,10 +971,10 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">Metrics</div>
-        <h2 class="section-title">숫자로 보는<br/>파파스의 <strong>임팩트.</strong></h2>
+        <div class="section-eyebrow" data-k="stats.eyebrow">Metrics</div>
+        <h2 class="section-title" data-k="stats.title">숫자로 보는<br>파파스의 <strong>임팩트.</strong></h2>
       </div>
-      <p class="section-lead">전통적 자서전 제작 대비 비용·기간을 줄이고, 시니어 IP 시장의 성장을 직접 만듭니다.</p>
+      <p class="section-lead" data-k="stats.lead">전통적 자서전 제작 대비 비용·기간을 줄이고, 시니어 IP 시장의 성장을 직접 만듭니다.</p>
     </div>
 
     <div class="stats reveal-stagger">
@@ -1017,11 +1017,11 @@ section.editorial{padding:96px 0}
         <h4>IP Utilization</h4>
         <div class="donut-wrap">
           <svg viewBox="0 0 120 120">
-            <circle cx="60" cy="60" r="48" fill="none" stroke="#f3f3f3" stroke-width="14"/>
-            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#0058d4" stroke-width="14" stroke-dasharray="0 301.6" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1)" data-target="105.5"/>
-            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#1eaedb" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-105.5" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.2s" data-target="84.5"/>
-            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#1f1f1f" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-190" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.4s" data-target="66.4"/>
-            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#cccccc" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-256.4" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.6s" data-target="45.2"/>
+            <circle cx="60" cy="60" r="48" fill="none" stroke="#f3f3f3" stroke-width="14"></circle>
+            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#0058d4" stroke-width="14" stroke-dasharray="0 301.6" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1)" data-target="105.5"></circle>
+            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#1eaedb" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-105.5" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.2s" data-target="84.5"></circle>
+            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#1f1f1f" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-190" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.4s" data-target="66.4"></circle>
+            <circle class="don-seg" cx="60" cy="60" r="48" fill="none" stroke="#cccccc" stroke-width="14" stroke-dasharray="0 301.6" stroke-dashoffset="-256.4" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.6s cubic-bezier(.2,.8,.2,1) 0.6s" data-target="45.2"></circle>
             <text x="60" y="58" text-anchor="middle" fill="#000" font-size="14" font-weight="700">PAPAS</text>
             <text x="60" y="73" text-anchor="middle" fill="#6b6b6b" font-size="7" font-weight="600">IP CORE</text>
           </svg>
@@ -1047,8 +1047,8 @@ section.editorial{padding:96px 0}
           <span class="small">Stories+Storage "Storige"<br> 이야기를 저장하는...</span>
         </div>
         <div class="anni-text">
-          <h3>한 사람의 이야기를<br/><strong>한 권, 한 공간으로 잇습니다.</strong></h3>
-          <p>
+          <h3 data-k="anniversary.title">한 사람의 이야기를<br><strong>한 권, 한 공간으로 잇습니다.</strong></h3>
+          <p data-k="anniversary.body0">
             파파스컴퍼니는 인터뷰 한 번에서 시작해 책·전시·공간으로 확장되는
             모든 단계를 자체 기술로 운영하는 IP 스튜디오입니다. AI 인터뷰 엔진,
             인쇄 자동화 스택, 저작 엔진, 전시 큐레이션이 하나의 흐름 안에 묶여 있습니다.
@@ -1056,7 +1056,7 @@ section.editorial{padding:96px 0}
           <div class="anni-actions">
             <button class="btn btn-primary" onclick="document.getElementById('identity').scrollIntoView({behavior:'smooth'})">
               우리가 믿는 것
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
             </button>
             <button class="btn btn-ghost-light" onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">로드맵 보기</button>
           </div>
@@ -1071,70 +1071,70 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">2026 Roadmap</div>
-        <h2 class="section-title">2026 — 한 해의<br/>네 가지 <strong>분기.</strong></h2>
+        <div class="section-eyebrow" data-k="roadmap.eyebrow">2026 Roadmap</div>
+        <h2 class="section-title" data-k="roadmap.title">2026 — 한 해의<br>네 가지 <strong>분기.</strong></h2>
       </div>
-      <p class="section-lead">IP를 만들고, 솔루션을 정식 런칭하고, 전시로 펼치고, 글로벌·시리즈A로 확장합니다.</p>
+      <p class="section-lead" data-k="roadmap.lead">IP를 만들고, 솔루션을 정식 런칭하고, 전시로 펼치고, 글로벌·시리즈A로 확장합니다.</p>
     </div>
 
     <div class="news-row reveal-stagger">
       <div class="news-track">
         <article class="news-card now">
-          <div class="news-card-img bg-quarter1"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M9.5 13.5L20 3"/><path d="M5 13l5 1 1 5-6-6zM3 21l3-3"/></svg><span class="markwm">PAPAS</span></div><span class="qbadge">Q1 · NOW</span>
-            <img src="https://picsum.photos/seed/papas-07/900/675" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <div class="news-card-img bg-quarter1"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M9.5 13.5L20 3"></path><path d="M5 13l5 1 1 5-6-6zM3 21l3-3"></path></svg><span class="markwm">PAPAS</span></div><span class="qbadge" data-k="news0.badge">Q1 · NOW</span>
+            <img src="https://picsum.photos/seed/papas-07/900/675" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="news0.img">
           </div>
           <div class="news-card-body">
-            <div class="news-card-tag">Foundation</div>
-            <h4>AI 자서전 베타 런칭과 솔루션 v1</h4>
-            <p>AI 자서전 '나의이야기' 베타 런칭, POD 자동견적 PoC 가동, Storywork Editor v1, 고양아람누리 전시 준비.</p>
+            <div class="news-card-tag" data-k="news0.tag">Foundation</div>
+            <h4 data-k="news0.title">AI 자서전 베타 런칭과 솔루션 v1</h4>
+            <p data-k="news0.desc">AI 자서전 '나의이야기' 베타 런칭, POD 자동견적 PoC 가동, Storywork Editor v1, 고양아람누리 전시 준비.</p>
             <div class="news-author">
-              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></svg></div><img src="https://picsum.photos/seed/papas-22/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-              <div class="meta"><strong>조요한 · CEO</strong>2026.04 · Foundation Phase</div>
+              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 22a8 8 0 0 1 16 0"></path></svg></div><img src="https://picsum.photos/seed/papas-22/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
+              <div class="meta"><strong data-k="news0.author">조요한 · CEO</strong>2026.04 · Foundation Phase</div>
             </div>
           </div>
         </article>
 
         <article class="news-card">
-          <div class="news-card-img bg-quarter2"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="markwm">PAPAS</span></div><span class="qbadge">Q2 · 2026</span>
-            <img src="https://picsum.photos/seed/papas-16/900/675" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <div class="news-card-img bg-quarter2"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg><span class="markwm">PAPAS</span></div><span class="qbadge" data-k="news1.badge">Q2 · 2026</span>
+            <img src="https://picsum.photos/seed/papas-16/900/675" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="news1.img">
           </div>
           <div class="news-card-body">
-            <div class="news-card-tag">Launch</div>
-            <h4>갤러리누리 전시 OPEN과 정식 런칭</h4>
-            <p>갤러리누리 전시 OPEN, Web2Print 정식 런칭, 자서전 200권 양산, HTML5 에디터 통합.</p>
+            <div class="news-card-tag" data-k="news1.tag">Launch</div>
+            <h4 data-k="news1.title">갤러리누리 전시 OPEN과 정식 런칭</h4>
+            <p data-k="news1.desc">갤러리누리 전시 OPEN, Web2Print 정식 런칭, 자서전 200권 양산, HTML5 에디터 통합.</p>
             <div class="news-author">
-              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></svg></div><img src="https://picsum.photos/seed/papas-23/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-              <div class="meta"><strong>강동현 · Tech Lead</strong>2026.07 · Launch Phase</div>
+              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 22a8 8 0 0 1 16 0"></path></svg></div><img src="https://picsum.photos/seed/papas-23/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
+              <div class="meta"><strong data-k="news1.author">강동현 · Tech Lead</strong>2026.07 · Launch Phase</div>
             </div>
           </div>
         </article>
 
         <article class="news-card">
-          <div class="news-card-img bg-quarter3"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"/><rect x="6" y="12" width="3" height="8"/><rect x="11" y="6" width="3" height="14"/><rect x="16" y="9" width="3" height="11"/></svg><span class="markwm">PAPAS</span></div><span class="qbadge">Q3 · 2026</span>
-            <img src="https://picsum.photos/seed/papas-13/900/675" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <div class="news-card-img bg-quarter3"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="20" x2="21" y2="20"></line><rect x="6" y="12" width="3" height="8"></rect><rect x="11" y="6" width="3" height="14"></rect><rect x="16" y="9" width="3" height="11"></rect></svg><span class="markwm">PAPAS</span></div><span class="qbadge" data-k="news2.badge">Q3 · 2026</span>
+            <img src="https://picsum.photos/seed/papas-13/900/675" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="news2.img">
           </div>
           <div class="news-card-body">
-            <div class="news-card-tag">Expansion</div>
-            <h4>인쇄 MES 상용화와 B2G 확장</h4>
-            <p>인쇄·출판 MES 상용화, B2G 시·구 사업 3건, Ondemand·자동화 확장, 전시 IP 라이센싱 1건.</p>
+            <div class="news-card-tag" data-k="news2.tag">Expansion</div>
+            <h4 data-k="news2.title">인쇄 MES 상용화와 B2G 확장</h4>
+            <p data-k="news2.desc">인쇄·출판 MES 상용화, B2G 시·구 사업 3건, Ondemand·자동화 확장, 전시 IP 라이센싱 1건.</p>
             <div class="news-author">
-              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></svg></div><img src="https://picsum.photos/seed/papas-24/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-              <div class="meta"><strong>Papas Studio</strong>2026.10 · Expansion Phase</div>
+              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 22a8 8 0 0 1 16 0"></path></svg></div><img src="https://picsum.photos/seed/papas-24/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
+              <div class="meta"><strong data-k="news2.author">Papas Studio</strong>2026.10 · Expansion Phase</div>
             </div>
           </div>
         </article>
 
         <article class="news-card">
-          <div class="news-card-img bg-quarter4"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="markwm">PAPAS</span></div><span class="qbadge">Q4 · 2026</span>
-            <img src="https://picsum.photos/seed/papas-25/900/675" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <div class="news-card-img bg-quarter4"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg><span class="markwm">PAPAS</span></div><span class="qbadge" data-k="news3.badge">Q4 · 2026</span>
+            <img src="https://picsum.photos/seed/papas-25/900/675" alt loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="news3.img">
           </div>
           <div class="news-card-body">
-            <div class="news-card-tag">Scale</div>
-            <h4>글로벌 진출과 시리즈A 클로즈</h4>
-            <p>글로벌 시니어 시장 진출, 시리즈A 라운드 클로즈, 매출 25억 달성, '나의이야기' IP 영상화 시작.</p>
+            <div class="news-card-tag" data-k="news3.tag">Scale</div>
+            <h4 data-k="news3.title">글로벌 진출과 시리즈A 클로즈</h4>
+            <p data-k="news3.desc">글로벌 시니어 시장 진출, 시리즈A 라운드 클로즈, 매출 25억 달성, '나의이야기' IP 영상화 시작.</p>
             <div class="news-author">
-              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></svg></div><img src="https://picsum.photos/seed/papas-26/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
-              <div class="meta"><strong>Papas Investor Relations</strong>2027.01 · Scale Phase</div>
+              <div class="av bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 22a8 8 0 0 1 16 0"></path></svg></div><img src="https://picsum.photos/seed/papas-26/80/80" alt="" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')"></div>
+              <div class="meta"><strong data-k="news3.author">Papas Investor Relations</strong>2027.01 · Scale Phase</div>
             </div>
           </div>
         </article>
@@ -1154,17 +1154,17 @@ section.editorial{padding:96px 0}
     </div>
 
     <div class="identity-grid reveal">
-      <div class="identity-quote">
-        이야기는 사라지지만<br/>
-        <em>기록된 이야기</em>는<br/>
-        세대를 가로질러<br/>
+      <div class="identity-quote" data-k="identity.quote">
+        이야기는 사라지지만<br>
+        <em>기록된 이야기</em>는<br>
+        세대를 가로질러<br>
         <em>유산</em>이 됩니다.
       </div>
       <div class="values">
-        <div class="value-cell"><div class="v-num">Value 01</div><h5>Human-First AI</h5><p>AI는 도구이고, 주인공은 사람의 기억과 목소리입니다.</p></div>
-        <div class="value-cell"><div class="v-num">Value 02</div><h5>Single IP, Multi Surface</h5><p>하나의 이야기를 책 · 전시 · 디지털 · 공간으로 확장합니다.</p></div>
-        <div class="value-cell"><div class="v-num">Value 03</div><h5>Print is a Platform</h5><p>인쇄는 끝이 아니라 IP가 세상에 출현하는 플랫폼입니다.</p></div>
-        <div class="value-cell"><div class="v-num">Value 04</div><h5>Legacy over Likes</h5><p>좋아요가 아니라 다음 세대에 남길 유산을 만듭니다.</p></div>
+        <div class="value-cell"><div class="v-num">Value 01</div><h5>Human-First AI</h5><p data-k="identity.valDesc0">AI는 도구이고, 주인공은 사람의 기억과 목소리입니다.</p></div>
+        <div class="value-cell"><div class="v-num">Value 02</div><h5>Single IP, Multi Surface</h5><p data-k="identity.valDesc1">하나의 이야기를 책 · 전시 · 디지털 · 공간으로 확장합니다.</p></div>
+        <div class="value-cell"><div class="v-num">Value 03</div><h5>Print is a Platform</h5><p data-k="identity.valDesc2">인쇄는 끝이 아니라 IP가 세상에 출현하는 플랫폼입니다.</p></div>
+        <div class="value-cell"><div class="v-num">Value 04</div><h5>Legacy over Likes</h5><p data-k="identity.valDesc3">좋아요가 아니라 다음 세대에 남길 유산을 만듭니다.</p></div>
       </div>
     </div>
   </div>
@@ -1176,12 +1176,12 @@ section.editorial{padding:96px 0}
     <div class="promo reveal">
       <div class="promo-inner">
         <div>
-          <h3>Papas <strong>Studio Membership.</strong></h3>
-          <p>제휴사·출판사·자체 인쇄소를 위한 통합 멤버십. POD 통합 솔루션 + Storywork Editor + 전시 IP 라이센싱을 한 계정으로 운영하세요.</p>
+          <h3 data-k="promo.title">Papas <strong>Studio Membership.</strong></h3>
+          <p data-k="promo.body0">제휴사·출판사·자체 인쇄소를 위한 통합 멤버십. POD 통합 솔루션 + Storywork Editor + 전시 IP 라이센싱을 한 계정으로 운영하세요.</p>
         </div>
-        <button class="btn btn-light-on-dark" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <button class="btn btn-light-on-dark" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-k="promo.btn0">
           멤버십 알아보기
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
         </button>
       </div>
     </div>
@@ -1193,15 +1193,15 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="cta-block reveal">
       <div class="inner">
-        <span class="eyebrow">Contact · 2026</span>
-        <h3>세상의 모든 이야기는<br/><strong>소중합니다.</strong></h3>
-        <p>제휴, 솔루션 도입, 전시 협업, 투자 제안 — 어떤 형태든 환영합니다. 여러분의 이야기를 보내주세요. 24시간 안에 회신드리겠습니다.</p>
+        <span class="eyebrow" data-k="contact.eyebrow">Contact · 2026</span>
+        <h3 data-k="contact.title">세상의 모든 이야기는<br><strong>소중합니다.</strong></h3>
+        <p data-k="contact.body">제휴, 솔루션 도입, 전시 협업, 투자 제안 — 어떤 형태든 환영합니다. 여러분의 이야기를 보내주세요. 24시간 안에 회신드리겠습니다.</p>
         <div class="cta-row">
-          <button class="btn btn-primary" onclick="alert('연결: yohan@papascompany.co.kr')">
+          <button class="btn btn-primary" onclick="alert('연결: yohan@papascompany.co.kr')" data-k="contact.btn1">
             yohan@papascompany.co.kr
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
           </button>
-          <button class="btn btn-ghost-dark" onclick="window.print()">Deck 다운로드</button>
+          <button class="btn btn-ghost-dark" onclick="window.print()" data-k="contact.btn2">Deck 다운로드</button>
         </div>
       </div>
     </div>
@@ -1213,140 +1213,140 @@ section.editorial{padding:96px 0}
   <div class="container">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-eyebrow">Portfolio</div>
-        <h2 class="section-title">우리가 기록하고 펼친<br/><strong>이야기들.</strong></h2>
+        <div class="section-eyebrow" data-k="portfolio.eyebrow">Portfolio</div>
+        <h2 class="section-title" data-k="portfolio.title">우리가 기록하고 펼친<br><strong>이야기들.</strong></h2>
       </div>
-      <p class="section-lead">파파스컴퍼니가 직접 기획·개발한 웹·모바일 프로덕트입니다. 카드를 클릭하면 실제 서비스가 새 탭에서 열립니다.</p>
+      <p class="section-lead" data-k="portfolio.lead">파파스컴퍼니가 직접 기획·개발한 웹·모바일 프로덕트입니다. 카드를 클릭하면 실제 서비스가 새 탭에서 열립니다.</p>
     </div>
 
     <div class="portfolio-grid reveal-stagger">
       <!-- 카드를 클릭하면 새 탭으로 해당 사이트가 열립니다. 이미지: /img/프로젝트명.png -->
-      <a class="tile" href="https://storige.co.kr" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://storige.co.kr" target="_blank" rel="noopener noreferrer" data-href-k="pf0.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/storige.co.kr.webp" alt="Storige" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/storige.co.kr.webp" alt="Storige" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf0.img">
         </div>
-        <div class="tile-info"><h4>Storige</h4><p>storige.co.kr</p></div>
+        <div class="tile-info"><h4 data-k="pf0.title">Storige</h4><p data-k="pf0.desc">storige.co.kr</p></div>
       </a>
 
-      <a class="tile" href="https://storige.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://storige.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf1.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/storige.webp" alt="Storige (Vercel)" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/storige.webp" alt="Storige (Vercel)" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf1.img">
         </div>
-        <div class="tile-info"><h4>Storige <span style="opacity:.5;font-weight:400">· Vercel</span></h4><p>storige.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf1.title">Storige <span style="opacity:.5;font-weight:400">· Vercel</span></h4><p data-k="pf1.desc">storige.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://kidsmemo.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://kidsmemo.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf2.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/kidsmemo.webp" alt="KidsMemo" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/kidsmemo.webp" alt="KidsMemo" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf2.img">
         </div>
-        <div class="tile-info"><h4>KidsMemo</h4><p>kidsmemo.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf2.title">KidsMemo</h4><p data-k="pf2.desc">kidsmemo.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://cardcraft-ai-peach.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://cardcraft-ai-peach.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf3.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/cardcraft-ai.webp" alt="CardCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/cardcraft-ai.webp" alt="CardCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf3.img">
         </div>
-        <div class="tile-info"><h4>CardCraft AI</h4><p>cardcraft-ai-peach.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf3.title">CardCraft AI</h4><p data-k="pf3.desc">cardcraft-ai-peach.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://sharesnap-three.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://sharesnap-three.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf4.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/sharesnap.webp" alt="ShareSnap" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/sharesnap.webp" alt="ShareSnap" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf4.img">
         </div>
-        <div class="tile-info"><h4>ShareSnap</h4><p>sharesnap-three.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf4.title">ShareSnap</h4><p data-k="pf4.desc">sharesnap-three.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://storywork-editor-web.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://storywork-editor-web.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf5.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/storywork-editor-web.webp" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/storywork-editor-web.webp" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf5.img">
         </div>
-        <div class="tile-info"><h4>Storywork Editor</h4><p>storywork-editor-web.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf5.title">Storywork Editor</h4><p data-k="pf5.desc">storywork-editor-web.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://frameshop-snowy.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://frameshop-snowy.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf6.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/frameshop.webp" alt="FrameShop" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/frameshop.webp" alt="FrameShop" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf6.img">
         </div>
-        <div class="tile-info"><h4>FrameShop</h4><p>frameshop-snowy.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf6.title">FrameShop</h4><p data-k="pf6.desc">frameshop-snowy.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://md2books.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://md2books.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf7.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/md2books.webp" alt="MD2Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/md2books.webp" alt="MD2Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf7.img">
         </div>
-        <div class="tile-info"><h4>MD2Books</h4><p>md2books.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf7.title">MD2Books</h4><p data-k="pf7.desc">md2books.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://100pbooks.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://100pbooks.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf8.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/100pMbooks.webp" alt="100P Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/100pMbooks.webp" alt="100P Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf8.img">
         </div>
-        <div class="tile-info"><h4>100P Books</h4><p>100pbooks.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf8.title">100P Books</h4><p data-k="pf8.desc">100pbooks.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://productcraft-ai.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://productcraft-ai.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf9.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/productcraft-ai.webp" alt="ProductCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/productcraft-ai.webp" alt="ProductCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf9.img">
         </div>
-        <div class="tile-info"><h4>ProductCraft AI</h4><p>productcraft-ai.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf9.title">ProductCraft AI</h4><p data-k="pf9.desc">productcraft-ai.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://printcard-studio.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://printcard-studio.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf10.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/printcard-studio.webp" alt="PrintCard Studio" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/printcard-studio.webp" alt="PrintCard Studio" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf10.img">
         </div>
-        <div class="tile-info"><h4>PrintCard Studio</h4><p>printcard-studio.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf10.title">PrintCard Studio</h4><p data-k="pf10.desc">printcard-studio.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://bookmoa-mobile.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://bookmoa-mobile.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf11.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/bookmoa-mobile.webp" alt="Bookmoa Mobile" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/bookmoa-mobile.webp" alt="Bookmoa Mobile" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf11.img">
         </div>
-        <div class="tile-info"><h4>Bookmoa Mobile</h4><p>bookmoa-mobile.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf11.title">Bookmoa Mobile</h4><p data-k="pf11.desc">bookmoa-mobile.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://frontend-beta-two-66.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://frontend-beta-two-66.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf12.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/frontend.webp" alt="Frontend" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/frontend.webp" alt="Frontend" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf12.img">
         </div>
-        <div class="tile-info"><h4>Frontend</h4><p>frontend-beta-two-66.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf12.title">Frontend</h4><p data-k="pf12.desc">frontend-beta-two-66.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://bowlingclub-kiro.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://bowlingclub-kiro.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf13.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/bowlingclub-kiro.webp" alt="Bowlingclub Kiro" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/bowlingclub-kiro.webp" alt="Bowlingclub Kiro" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf13.img">
         </div>
-        <div class="tile-info"><h4>Bowlingclub Kiro</h4><p>bowlingclub-kiro.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf13.title">Bowlingclub Kiro</h4><p data-k="pf13.desc">bowlingclub-kiro.vercel.app</p></div>
       </a>
 
-      <a class="tile" href="https://mystory-khaki.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a class="tile" href="https://mystory-khaki.vercel.app" target="_blank" rel="noopener noreferrer" data-href-k="pf14.href">
         <div class="tile-poster">
-          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
-          <img src="img/mystory.webp" alt="MyStory" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg></span>
+          <img src="img/mystory.webp" alt="MyStory" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf14.img">
         </div>
-        <div class="tile-info"><h4>MyStory</h4><p>mystory-khaki.vercel.app</p></div>
+        <div class="tile-info"><h4 data-k="pf14.title">MyStory</h4><p data-k="pf14.desc">mystory-khaki.vercel.app</p></div>
       </a>
 
       <!-- Fisher King — 링크 미정, 이미지만 표시 (URL 받으면 <a target=_blank> 로 전환) -->
       <div class="tile tile-nolink">
         <div class="tile-poster">
-          <img src="img/fisher-king.webp" alt="Fisher King" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+          <img src="img/fisher-king.webp" alt="Fisher King" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" data-src-k="pf15.img">
         </div>
-        <div class="tile-info"><h4>Fisher King</h4><p style="opacity:.6">링크 준비 중</p></div>
+        <div class="tile-info"><h4 data-k="pf15.title">Fisher King</h4><p style="opacity:.6" data-k="pf15.desc">링크 준비 중</p></div>
       </div>
     </div>
   </div>
@@ -1356,64 +1356,64 @@ section.editorial{padding:96px 0}
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
-      <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-footer" />
-      <div class="footer-brand-ko">(주)파파스컴퍼니</div>
+      <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-footer" >
+      <div class="footer-brand-ko" data-k="footer.brandKo">(주)파파스컴퍼니</div>
     </div>
     <div class="footer-grid">
       <div class="footer-col">
-        <h6>회사</h6>
+        <h6 data-k="footer.col0_title">회사</h6>
         <ul>
-          <li><a href="#story-intro">소개</a></li>
-          <li><a href="#identity">브랜드</a></li>
-          <li><a href="#contact">채용</a></li>
-          <li><a href="#contact">파트너십</a></li>
+          <li><a href="#story-intro" data-k="footer.col0_link0">소개</a></li>
+          <li><a href="#identity" data-k="footer.col0_link1">브랜드</a></li>
+          <li><a href="#contact" data-k="footer.col0_link2">채용</a></li>
+          <li><a href="#contact" data-k="footer.col0_link3">파트너십</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h6>솔루션</h6>
+        <h6 data-k="footer.col1_title">솔루션</h6>
         <ul>
-          <li><a href="#solutions">AI 자서전 '나의이야기'</a></li>
-          <li><a href="#solutions">POD 통합 솔루션</a></li>
-          <li><a href="#solutions">Storywork Editor</a></li>
-          <li><a href="#solutions">전시 · 공간 콘텐츠</a></li>
+          <li><a href="#solutions" data-k="footer.col1_link0">AI 자서전 '나의이야기'</a></li>
+          <li><a href="#solutions" data-k="footer.col1_link1">POD 통합 솔루션</a></li>
+          <li><a href="#solutions" data-k="footer.col1_link2">Storywork Editor</a></li>
+          <li><a href="#solutions" data-k="footer.col1_link3">전시 · 공간 콘텐츠</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h6>POD 서브</h6>
+        <h6 data-k="footer.col2_title">POD 서브</h6>
         <ul>
-          <li><a href="#lineup">자동견적 솔루션</a></li>
-          <li><a href="#lineup">HTML5 Web2Print</a></li>
-          <li><a href="#lineup">Ondemand</a></li>
-          <li><a href="#lineup">인쇄·출판 MES</a></li>
-          <li><a href="#lineup">자동화 솔루션</a></li>
+          <li><a href="#lineup" data-k="footer.col2_link0">자동견적 솔루션</a></li>
+          <li><a href="#lineup" data-k="footer.col2_link1">HTML5 Web2Print</a></li>
+          <li><a href="#lineup" data-k="footer.col2_link2">Ondemand</a></li>
+          <li><a href="#lineup" data-k="footer.col2_link3">인쇄·출판 MES</a></li>
+          <li><a href="#lineup" data-k="footer.col2_link4">자동화 솔루션</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h6>리소스</h6>
+        <h6 data-k="footer.col3_title">리소스</h6>
         <ul>
-          <li><a href="#roadmap">로드맵</a></li>
-          <li><a href="#stats">실적·시장</a></li>
-          <li><a href="#pipeline">기술 스택</a></li>
-          <li><a href="#contact">투자자 자료</a></li>
+          <li><a href="#roadmap" data-k="footer.col3_link0">로드맵</a></li>
+          <li><a href="#stats" data-k="footer.col3_link1">실적·시장</a></li>
+          <li><a href="#pipeline" data-k="footer.col3_link2">기술 스택</a></li>
+          <li><a href="#contact" data-k="footer.col3_link3">투자자 자료</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h6>연결</h6>
+        <h6 data-k="footer.col4_title">연결</h6>
         <ul>
-          <li><a href="#contact">contact@papas.company</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Brunch</a></li>
-          <li><a href="#">Newsletter</a></li>
+          <li><a href="#contact" data-k="footer.col4_link0">contact@papas.company</a></li>
+          <li><a href="#" data-k="footer.col4_link1">LinkedIn</a></li>
+          <li><a href="#" data-k="footer.col4_link2">Brunch</a></li>
+          <li><a href="#" data-k="footer.col4_link3">Newsletter</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="copy">
-        © 2026 <strong>PAPAS COMPANY Inc.</strong> All Stories Reserved.<br/>
+      <div class="copy" data-k="footer.bottom0">
+        © 2026 <strong>PAPAS COMPANY Inc.</strong> All Stories Reserved.<br>
         v3.0 · Memoir & Print Tech Studio · Built for global IP delivery.
       </div>
-      <div class="legal">
-        대표: 조요한 · 사업자등록번호: 000-00-00000<br/>
+      <div class="legal" data-k="footer.bottom1">
+        대표: 조요한 · 사업자등록번호: 000-00-00000<br>
         주소: Republic of Korea · contact@papas.company
       </div>
     </div>
@@ -1425,7 +1425,7 @@ section.editorial{padding:96px 0}
   <!-- Modal 1: AI Memoir -->
   <div class="modal" data-modal-id="m1" style="display:none">
     <button class="modal-close" data-close>✕</button>
-    <div class="modal-hero bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-02/1600/900" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+    <div class="modal-hero bg-memoir"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"></path><path d="M8 7h8M8 11h8M8 15h5"></path></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-02/1600/900" alt="AI 자서전" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" >
     </div>
     <div class="modal-body">
       <div class="modal-eyebrow">AI Memoir Engine</div>
@@ -1460,7 +1460,7 @@ section.editorial{padding:96px 0}
   <!-- Modal 2: POD Suite -->
   <div class="modal" data-modal-id="m2" style="display:none">
     <button class="modal-close" data-close>✕</button>
-    <div class="modal-hero bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"/><path d="M6 9V4h12v5M6 18v3h12v-3"/><circle cx="17" cy="13" r="0.7" fill="currentColor"/></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-03/1600/900" alt="POD" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+    <div class="modal-hero bg-pod"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="9" rx="1.5"></rect><path d="M6 9V4h12v5M6 18v3h12v-3"></path><circle cx="17" cy="13" r="0.7" fill="currentColor"></circle></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-03/1600/900" alt="POD" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" >
     </div>
     <div class="modal-body">
       <div class="modal-eyebrow">POD Suite</div>
@@ -1496,7 +1496,7 @@ section.editorial{padding:96px 0}
   <!-- Modal 3: Storywork Editor -->
   <div class="modal" data-modal-id="m3" style="display:none">
     <button class="modal-close" data-close>✕</button>
-    <div class="modal-hero bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"/><line x1="13" y1="13" x2="20" y2="20"/></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-04/1600/900" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+    <div class="modal-hero bg-author"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l7 18 2-9 9-2L3 3z"></path><line x1="13" y1="13" x2="20" y2="20"></line></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-04/1600/900" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" >
     </div>
     <div class="modal-body">
       <div class="modal-eyebrow">Authoring Engine</div>
@@ -1531,7 +1531,7 @@ section.editorial{padding:96px 0}
   <!-- Modal 4: Exhibition -->
   <div class="modal" data-modal-id="m4" style="display:none">
     <button class="modal-close" data-close>✕</button>
-    <div class="modal-hero bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-08/1600/900" alt="Exhibition" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+    <div class="modal-hero bg-exhibit"><div class="card-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg><span class="markwm">PAPAS</span></div><img src="https://picsum.photos/seed/papas-08/1600/900" alt="Exhibition" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" >
     </div>
     <div class="modal-body">
       <div class="modal-eyebrow">Exhibition & Space</div>
