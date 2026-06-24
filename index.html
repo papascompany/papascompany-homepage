@@ -82,6 +82,10 @@ img{display:block;max-width:100%;height:auto}
   color:#fff;font-weight:800;font-size:13px;letter-spacing:-0.5px;
 }
 .nav-brand .ko{color:rgba(255,255,255,0.6);font-weight:500;margin-left:4px;font-size:13px}
+/* Brand logo image (replaces the P mark + wordmark); white chip keeps the dark logo legible on dark/blue backgrounds */
+.brand-logo{display:block;width:auto;background:#fff;object-fit:contain}
+.brand-logo-nav{height:22px;padding:5px 10px;border-radius:7px}
+.brand-logo-footer{height:30px;padding:8px 13px;border-radius:9px}
 .nav-links{display:flex;gap:28px;font-size:14px;color:#fff;font-weight:500}
 .nav-links a{color:#fff;transition:color .18s ease}
 .nav-links a:hover{color:var(--link-hover)}
@@ -287,6 +291,27 @@ section.editorial{padding:96px 0}
 .tile-info{padding:14px 4px 6px}
 .tile-info h4{font-size:15px;font-weight:600;color:#fff;margin:0 0 4px;letter-spacing:-0.015em;line-height:1.25}
 .tile-info p{font-size:12.5px;color:rgba(255,255,255,0.5);margin:0;line-height:1.4;font-weight:400}
+
+/* ============== PORTFOLIO GRID (reuses .tile / .tile-poster / .tile-info) ============== */
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:880px){.portfolio-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(max-width:520px){.portfolio-grid{grid-template-columns:1fr;gap:16px}}
+.portfolio-grid .tile{position:relative}
+.portfolio-grid .tile-poster{aspect-ratio:16/9}
+.portfolio-grid .tile-poster img{object-position:top center}
+.portfolio-grid .tile-info{padding:14px 4px 4px}
+.portfolio-grid .tile-info h4{font-size:15px}
+.portfolio-grid .tile-info p{font-size:12.5px;color:rgba(255,255,255,0.45)}
+.tile-visit{
+  position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;
+  background:rgba(8,12,26,0.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  opacity:0;transform:translateY(-4px) scale(.9);
+  transition:opacity .2s ease,transform .2s ease;z-index:2;
+}
+.portfolio-grid .tile:hover .tile-visit{opacity:1;transform:none}
+.portfolio-grid .tile-nolink{cursor:default}
+.portfolio-grid .tile-nolink:hover{transform:none}
 
 /* ============== PIPELINE ============== */
 .pipeline{
@@ -579,8 +604,7 @@ section.editorial{padding:96px 0}
 <!-- ============== NAV ============== -->
 <nav class="nav" id="nav">
   <a href="#top" class="nav-brand">
-    <span class="logo-mark">P</span>
-    PAPAS
+    <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-nav" />
     <span class="ko">(주)파파스컴퍼니</span>
   </a>
   <div class="nav-links">
@@ -590,6 +614,7 @@ section.editorial{padding:96px 0}
     <a href="#roadmap">로드맵</a>
     <a href="#identity">브랜드</a>
     <a href="#contact">문의</a>
+    <a href="#portfolio">포트폴리오</a>
   </div>
   <div class="nav-actions">
     <button class="nav-search" aria-label="검색">
@@ -1155,15 +1180,156 @@ section.editorial{padding:96px 0}
   </div>
 </section>
 
+<!-- ============== PORTFOLIO ============== -->
+<section class="editorial surface-dark" id="portfolio">
+  <div class="container">
+    <div class="section-head-row reveal">
+      <div>
+        <div class="section-eyebrow">Portfolio</div>
+        <h2 class="section-title">우리가 기록하고 펼친<br/><strong>이야기들.</strong></h2>
+      </div>
+      <p class="section-lead">파파스컴퍼니가 직접 기획·개발한 웹·모바일 프로덕트입니다. 카드를 클릭하면 실제 서비스가 새 탭에서 열립니다.</p>
+    </div>
+
+    <div class="portfolio-grid reveal-stagger">
+      <!-- 카드를 클릭하면 새 탭으로 해당 사이트가 열립니다. 이미지: /img/프로젝트명.png -->
+      <a class="tile" href="https://storige.co.kr" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/storige.co.kr.webp" alt="Storige" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Storige</h4><p>storige.co.kr</p></div>
+      </a>
+
+      <a class="tile" href="https://storige.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/storige.webp" alt="Storige (Vercel)" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Storige <span style="opacity:.5;font-weight:400">· Vercel</span></h4><p>storige.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://kidsmemo.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/kidsmemo.webp" alt="KidsMemo" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>KidsMemo</h4><p>kidsmemo.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://cardcraft-ai-peach.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/cardcraft-ai.webp" alt="CardCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>CardCraft AI</h4><p>cardcraft-ai-peach.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://sharesnap-three.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/sharesnap.webp" alt="ShareSnap" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>ShareSnap</h4><p>sharesnap-three.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://storywork-editor-web.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/storywork-editor-web.webp" alt="Storywork Editor" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Storywork Editor</h4><p>storywork-editor-web.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://frameshop-snowy.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/frameshop.webp" alt="FrameShop" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>FrameShop</h4><p>frameshop-snowy.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://md2books.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/md2books.webp" alt="MD2Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>MD2Books</h4><p>md2books.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://100pbooks.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/100pMbooks.webp" alt="100P Books" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>100P Books</h4><p>100pbooks.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://productcraft-ai.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/productcraft-ai.webp" alt="ProductCraft AI" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>ProductCraft AI</h4><p>productcraft-ai.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://printcard-studio.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/printcard-studio.webp" alt="PrintCard Studio" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>PrintCard Studio</h4><p>printcard-studio.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://bookmoa-mobile.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/bookmoa-mobile.webp" alt="Bookmoa Mobile" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Bookmoa Mobile</h4><p>bookmoa-mobile.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://frontend-beta-two-66.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/frontend.webp" alt="Frontend" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Frontend</h4><p>frontend-beta-two-66.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://bowlingclub-kiro.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/bowlingclub-kiro.webp" alt="Bowlingclub Kiro" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Bowlingclub Kiro</h4><p>bowlingclub-kiro.vercel.app</p></div>
+      </a>
+
+      <a class="tile" href="https://mystory-khaki.vercel.app" target="_blank" rel="noopener noreferrer">
+        <div class="tile-poster">
+          <span class="tile-visit"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg></span>
+          <img src="img/mystory.webp" alt="MyStory" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>MyStory</h4><p>mystory-khaki.vercel.app</p></div>
+      </a>
+
+      <!-- Fisher King — 링크 미정, 이미지만 표시 (URL 받으면 <a target=_blank> 로 전환) -->
+      <div class="tile tile-nolink">
+        <div class="tile-poster">
+          <img src="img/fisher-king.webp" alt="Fisher King" loading="lazy" onerror="this.style.display='none';this.parentElement&&this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="tile-info"><h4>Fisher King</h4><p style="opacity:.6">링크 준비 중</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============== FOOTER ============== -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
-      <div class="footer-logo">P</div>
-      <div>
-        <div class="footer-brand-name">PapasCompany</div>
-        <div class="footer-brand-ko">(주)파파스컴퍼니</div>
-      </div>
+      <img src="img/logo.png" alt="PAPAS COMPANY" class="brand-logo brand-logo-footer" />
+      <div class="footer-brand-ko">(주)파파스컴퍼니</div>
     </div>
     <div class="footer-grid">
       <div class="footer-col">
@@ -1432,7 +1598,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 /* ============== Active section in nav + thumb tray ============== */
-const sections = ['story-intro','solutions','lineup','pipeline','stats','anniversary','roadmap','identity','contact'];
+const sections = ['story-intro','solutions','lineup','pipeline','stats','anniversary','roadmap','identity','contact','portfolio'];
 const navLinks = document.querySelectorAll('.nav-links a');
 const thumbs = document.querySelectorAll('.thumb');
 function updateActive(){
