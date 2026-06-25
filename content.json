@@ -36,7 +36,7 @@
   "story.body": "시간이 지나면 가장 먼저 잊히는 것은 평범한 일상입니다.\n          파파스컴퍼니는 사라질 이야기를 기록하고, 출판하고, 공간으로 펼치는\n          IP 콘텐츠 컴퍼니입니다. 하나의 인터뷰가 한 권의 자서전이 되고,\n          한 권의 자서전이 전시와 공간으로 확장되는 흐름을 자체 기술로 운영합니다.",
   "story.btn": "자세히 보기\n          <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"M5 12h14M13 5l7 7-7 7\"></path></svg>",
   "story.img": "https://picsum.photos/seed/papas-09/1400/875",
-  "solutions.eyebrow": "Solutions",
+  "solutions.eyebrow": "PapasCompany AI Solutions",
   "solutions.title": "네 개의 솔루션,<br>하나의 <strong>스토리 시스템.</strong>",
   "solutions.lead": "각 카드를 클릭하면 기능, 기술 스택, 고객 가치가 자세히 펼쳐집니다.",
   "sol_card0.img": "https://picsum.photos/seed/papas-02/1400/875",
